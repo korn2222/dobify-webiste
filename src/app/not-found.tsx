@@ -1,4 +1,11 @@
-'use client';
+
+
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    metadataBase: new URL('https://dobify.org'),
+    title: 'Page Not Found',
+};
 
 // Global 404 handling - used when the [locale] layout fails (e.g. invalid locale like /favicon.ico)
 export default function GlobalNotFound() {
