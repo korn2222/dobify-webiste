@@ -1,0 +1,149 @@
+{
+    "nav": {
+        "home": "Home",
+        "blog": "Blog",
+        "caseStudies": "Case Studies",
+        "bookAudit": "Book Your Free Audit"
+    },
+    "hero": {
+        "headline": "From Lead to Booked Call in Under 60 Seconds",
+        "subheadline": "AI automation systems that capture, qualify, and contact your leads instantly—while your competitors are still checking email.",
+        "cta": "Book Your Free Audit"
+    },
+    "socialProof": {
+        "leads": "Leads Generated",
+        "calls": "Calls Booked",
+        "clients": "Happy Clients",
+        "responseTime": "Avg. Response Time"
+    },
+    "features": {
+        "title": "Everything You Need to Dominate Your Market",
+        "subtitle": "Six powerful tools, one seamless platform.",
+        "leadGen": {
+            "title": "Lead Generation",
+            "subtitle": "Paid Ads",
+            "description": "High-converting ad campaigns on Meta, Google & TikTok that flood your pipeline with qualified prospects every single day."
+        },
+        "aiCaller": {
+            "title": "AI Caller",
+            "subtitle": "Speed to Lead",
+            "description": "Our AI voice agent contacts every new lead within seconds—qualifying, booking, and following up 24/7 without missing a beat."
+        },
+        "dataAnalysis": {
+            "title": "Data Analysis",
+            "subtitle": "Automated Dashboards",
+            "description": "Real-time Excel & BI dashboards that turn your raw data into actionable insights. No manual reports, no guesswork."
+        },
+        "crm": {
+            "title": "CRM",
+            "subtitle": "Client Database",
+            "description": "Manage your entire client journey in one place—from first touch to closed deal, with automated follow-ups and pipeline tracking."
+        },
+        "notificationBot": {
+            "title": "Real-Time Notification Bot",
+            "subtitle": "Instant Alerts",
+            "description": "Get instant Slack, WhatsApp & email alerts the moment a lead converts, a deal closes, or a task needs attention."
+        },
+        "smsCampaigns": {
+            "title": "SMS & Email Campaigns",
+            "subtitle": "Automated Outreach",
+            "description": "Automated drip sequences via SMS and email that nurture leads, recover abandoned prospects, and drive repeat engagement at scale."
+        }
+    },
+    "howItWorks": {
+        "title": "How It Works",
+        "subtitle": "Three steps. Zero friction.",
+        "step1": {
+            "title": "Capture",
+            "description": "We launch targeted ad campaigns that drive high-intent leads straight into your pipeline."
+        },
+        "step2": {
+            "title": "Qualify",
+            "description": "Our AI instantly assesses each lead, scoring them and filtering out the noise in real time."
+        },
+        "step3": {
+            "title": "Book",
+            "description": "Qualified leads get an AI-powered call within seconds—booking directly into your calendar."
+        }
+    },
+    "results": {
+        "title": "The Numbers Speak for Themselves",
+        "subtitle": "Average results across our client portfolio.",
+        "chart1Title": "Lead Response Time",
+        "chart1Desc": "Dobify vs Industry Average",
+        "chart2Title": "Revenue Growth",
+        "chart2Desc": "First 6 months with Dobify",
+        "chart3Title": "Lead Sources",
+        "chart3Desc": "Breakdown by channel"
+    },
+    "testimonials": {
+        "title": "Trusted by Growth-Obsessed Teams",
+        "subtitle": "See what our clients have to say.",
+        "reviews": [
+            {
+                "name": "Sarah Mitchell",
+                "role": "CEO, TechScale Solutions",
+                "text": "Dobify completely transformed our sales pipeline. We went from missing 40% of leads to booking calls within seconds. Revenue is up 280% in 6 months."
+            },
+            {
+                "name": "James Kowalski",
+                "role": "Founder, PropFlow Agency",
+                "text": "The AI caller is a game-changer. It handles the first touch so my team can focus on closing. We've tripled our conversion rate."
+            },
+            {
+                "name": "Anna Bergström",
+                "role": "Marketing Director, NordicGrowth",
+                "text": "The automated dashboards alone saved us 20 hours a week. Now add the AI caller and CRM integration—it's like having 5 extra employees."
+            }
+        ]
+    },
+    "blogPreview": {
+        "title": "Latest from the Blog",
+        "subtitle": "Insights on AI, automation & growth.",
+        "readMore": "Read more",
+        "viewAll": "View all posts"
+    },
+    "cta": {
+        "title": "Ready to Automate Your Growth?",
+        "subtitle": "Get a free audit of your current lead flow and see exactly where you're losing deals.",
+        "button": "Book Your Free Audit"
+    },
+    "footer": {
+        "description": "AI-powered marketing and automation systems that help businesses capture, qualify, and convert leads faster than ever.",
+        "quickLinks": "Quick Links",
+        "services": "Services",
+        "legal": "Legal",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "copyright": "© 2026 Dobify. All rights reserved."
+    },
+    "blog": {
+        "title": "Blog",
+        "subtitle": "Insights, guides, and strategies on AI automation and marketing.",
+        "readMore": "Read article",
+        "backToBlog": "← Back to Blog"
+    },
+    "caseStudies": {
+        "title": "Case Studies",
+        "subtitle": "Real results from real businesses using Dobify.",
+        "readMore": "View case study",
+        "backToList": "← Back to Case Studies",
+        "results": "Key Results",
+        "industry": "Industry",
+        "challenge": "The Challenge",
+        "solution": "Our Solution"
+    },
+    "metadata": {
+        "title": "Dobify — AI Marketing & Automation Agency",
+        "description": "From lead to booked call in under 60 seconds. AI automation systems that capture, qualify, and contact your leads instantly.",
+        "blogTitle": "Blog — Dobify",
+        "blogDescription": "Insights on AI automation, marketing, and business growth strategies.",
+        "caseStudiesTitle": "Case Studies — Dobify",
+        "caseStudiesDescription": "Real results from businesses using Dobify's AI-powered marketing automation."
+    },
+    "notFound": {
+        "title": "Page Not Found",
+        "description": "Sorry, we couldn't find the page you're looking for.",
+        "button": "Back to Home"
+    }
+}

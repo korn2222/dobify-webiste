@@ -1,0 +1,149 @@
+{
+    "nav": {
+        "home": "Strona główna",
+        "blog": "Blog",
+        "caseStudies": "Case Studies",
+        "bookAudit": "Bezpłatny audyt"
+    },
+    "hero": {
+        "headline": "Od leada do umówionej rozmowy w mniej niż 60 sekund",
+        "subheadline": "Systemy automatyzacji AI, które przechwytują, kwalifikują i kontaktują Twoich leadów natychmiast — podczas gdy Twoja konkurencja wciąż sprawdza maila.",
+        "cta": "Bezpłatny audyt"
+    },
+    "socialProof": {
+        "leads": "Wygenerowanych leadów",
+        "calls": "Umówionych rozmów",
+        "clients": "Zadowolonych klientów",
+        "responseTime": "Śr. czas odpowiedzi"
+    },
+    "features": {
+        "title": "Wszystko, czego potrzebujesz, by zdominować swój rynek",
+        "subtitle": "Sześć potężnych narzędzi, jedna platforma.",
+        "leadGen": {
+            "title": "Generowanie leadów",
+            "subtitle": "Reklamy płatne",
+            "description": "Wysoko konwertujące kampanie reklamowe na Meta, Google i TikTok, które codziennie zasilają Twój pipeline wykwalifikowanymi prospektami."
+        },
+        "aiCaller": {
+            "title": "AI Caller",
+            "subtitle": "Szybkość do leada",
+            "description": "Nasz agent głosowy AI kontaktuje każdego nowego leada w ciągu sekund — kwalifikuje, ustawia spotkania i śledzi 24/7 bez przerwy."
+        },
+        "dataAnalysis": {
+            "title": "Analiza danych",
+            "subtitle": "Automatyczne dashboardy",
+            "description": "Dashboardy w czasie rzeczywistym, które zamieniają surowe dane w praktyczne wnioski. Żadnych ręcznych raportów, żadnego zgadywania."
+        },
+        "crm": {
+            "title": "CRM",
+            "subtitle": "Baza klientów",
+            "description": "Zarządzaj całą ścieżką klienta w jednym miejscu — od pierwszego kontaktu do zamkniętej transakcji, z automatycznym follow-upem."
+        },
+        "notificationBot": {
+            "title": "Bot powiadomień w czasie rzeczywistym",
+            "subtitle": "Natychmiastowe alerty",
+            "description": "Natychmiastowe powiadomienia przez Slack, WhatsApp i email w momencie konwersji leada, zamknięcia transakcji lub wymaganej akcji."
+        },
+        "smsCampaigns": {
+            "title": "Kampanie SMS & Email",
+            "subtitle": "Automatyczny outreach",
+            "description": "Automatyczne sekwencje drip przez SMS i email, które pielęgnują leady, odzyskują porzuconych prospektów i napędzają ponowne zaangażowanie na skalę."
+        }
+    },
+    "howItWorks": {
+        "title": "Jak to działa",
+        "subtitle": "Trzy kroki. Zero tarcia.",
+        "step1": {
+            "title": "Przechwycenie",
+            "description": "Uruchamiamy targetowane kampanie reklamowe, które kierują leady o wysokim intencji prosto do Twojego pipeline."
+        },
+        "step2": {
+            "title": "Kwalifikacja",
+            "description": "Nasz AI natychmiast ocenia każdego leada, przyznając punkty i odfiltrowując szum w czasie rzeczywistym."
+        },
+        "step3": {
+            "title": "Rezerwacja",
+            "description": "Zakwalifikowani leadzi otrzymują telefon od AI w ciągu sekund — rezerwacja bezpośrednio w Twoim kalendarzu."
+        }
+    },
+    "results": {
+        "title": "Liczby mówią same za siebie",
+        "subtitle": "Średnie wyniki w portfolio naszych klientów.",
+        "chart1Title": "Czas odpowiedzi na leada",
+        "chart1Desc": "Dobify vs średnia branżowa",
+        "chart2Title": "Wzrost przychodów",
+        "chart2Desc": "Pierwsze 6 miesięcy z Dobify",
+        "chart3Title": "Źródła leadów",
+        "chart3Desc": "Podział na kanały"
+    },
+    "testimonials": {
+        "title": "Zaufali nam zespoły nastawione na wzrost",
+        "subtitle": "Zobacz, co mówią nasi klienci.",
+        "reviews": [
+            {
+                "name": "Sarah Mitchell",
+                "role": "CEO, TechScale Solutions",
+                "text": "Dobify całkowicie przekształciło nasz pipeline sprzedażowy. Przeszliśmy od tracenia 40% leadów do umawiania rozmów w sekundy. Przychody wzrosły o 280% w 6 miesięcy."
+            },
+            {
+                "name": "James Kowalski",
+                "role": "Założyciel, PropFlow Agency",
+                "text": "AI Caller to rewolucja. Obsługuje pierwszy kontakt, więc mój zespół może skupić się na zamykaniu. Potroiliśmy nasz wskaźnik konwersji."
+            },
+            {
+                "name": "Anna Bergström",
+                "role": "Dyrektor Marketingu, NordicGrowth",
+                "text": "Same automatyczne dashboardy zaoszczędziły nam 20 godzin tygodniowo. Dodaj do tego AI Callera i integrację CRM — to jak mieć 5 dodatkowych pracowników."
+            }
+        ]
+    },
+    "blogPreview": {
+        "title": "Najnowsze z bloga",
+        "subtitle": "Wiedza o AI, automatyzacji i wzroście.",
+        "readMore": "Czytaj więcej",
+        "viewAll": "Zobacz wszystkie wpisy"
+    },
+    "cta": {
+        "title": "Gotowy na automatyzację wzrostu?",
+        "subtitle": "Otrzymaj bezpłatny audyt obecnego flow leadów i zobacz, gdzie dokładnie tracisz transakcje.",
+        "button": "Bezpłatny audyt"
+    },
+    "footer": {
+        "description": "Systemy marketingu i automatyzacji oparte na AI, które pomagają firmom szybciej przechwytywać, kwalifikować i konwertować leady.",
+        "quickLinks": "Szybkie linki",
+        "services": "Usługi",
+        "legal": "Prawne",
+        "privacy": "Polityka prywatności",
+        "terms": "Regulamin",
+        "copyright": "© 2026 Dobify. Wszelkie prawa zastrzeżone."
+    },
+    "blog": {
+        "title": "Blog",
+        "subtitle": "Wnioski, poradniki i strategie dotyczące automatyzacji AI i marketingu.",
+        "readMore": "Czytaj artykuł",
+        "backToBlog": "← Powrót do bloga"
+    },
+    "caseStudies": {
+        "title": "Case Studies",
+        "subtitle": "Realne wyniki firm korzystających z Dobify.",
+        "readMore": "Zobacz case study",
+        "backToList": "← Powrót do case studies",
+        "results": "Kluczowe wyniki",
+        "industry": "Branża",
+        "challenge": "Wyzwanie",
+        "solution": "Nasze rozwiązanie"
+    },
+    "metadata": {
+        "title": "Dobify — Agencja Marketingu i Automatyzacji AI",
+        "description": "Od leada do umówionej rozmowy w mniej niż 60 sekund. Systemy automatyzacji AI, które przechwytują, kwalifikują i kontaktują Twoich leadów natychmiast.",
+        "blogTitle": "Blog — Dobify",
+        "blogDescription": "Wiedza o automatyzacji AI, marketingu i strategiach wzrostu biznesu.",
+        "caseStudiesTitle": "Case Studies — Dobify",
+        "caseStudiesDescription": "Realne wyniki firm korzystających z automatyzacji marketingu AI od Dobify."
+    },
+    "notFound": {
+        "title": "Strona nie znaleziona",
+        "description": "Przepraszamy, nie mogliśmy znaleźć strony, której szukasz.",
+        "button": "Wróć do strony głównej"
+    }
+}
