@@ -16,6 +16,7 @@ export async function generateMetadata({
     params: Promise<{ locale: string }>;
 }) {
     const { locale } = await params;
+    const url = 'https://dobify.org';
 
     // Validate locale
     if (!routing.locales.includes(locale as any)) {
@@ -26,6 +27,11 @@ export async function generateMetadata({
         const messages = (await import(`../../../messages/${locale}.json`)).default;
 
         return {
+            metadataBase: new URL(url),
+            keywords: ['AI Marketing', 'Automation Agency', 'Lead Generation', 'Marketing Automation', 'Dobify'],
+            authors: [{ name: 'Korneliusz Dobek' }, { name: 'Dobify', url: 'https://dobify.org' }],
+            creator: 'Korneliusz Dobek',
+            publisher: 'Dobify',
             title: messages.metadata.title,
             description: messages.metadata.description,
             alternates: {
@@ -41,6 +47,14 @@ export async function generateMetadata({
                 locale: locale,
                 type: 'website',
                 siteName: 'Dobify',
+                images: [
+                    {
+                        url: '/opengraph-image',
+                        width: 1200,
+                        height: 630,
+                        alt: messages.metadata.title,
+                    },
+                ],
             },
             twitter: {
                 card: 'summary_large_image',
