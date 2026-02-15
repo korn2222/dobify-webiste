@@ -44,14 +44,29 @@ export default function FeatureIcon({ type }: FeatureIconProps) {
         ),
         dataAnalysis: (
             <svg {...iconProps}>
-                {[12, 20, 28, 36].map((x, i) => (
-                    <motion.rect key={x} x={x - 2} y={48 - (i + 1) * 8 - 8} width="4" height={(i + 1) * 8} rx="2"
-                        fill={i === 3 ? '#4ad888' : `rgba(74, 216, 136, ${0.3 + i * 0.15})`}
-                        initial={{ scaleY: 0 }} animate={isInView ? { scaleY: 1 } : {}} transition={{ duration: 0.6, delay: i * 0.15 }}
-                        style={{ transformOrigin: `${x}px 40px` }} />
+                {/* Axes */}
+                <motion.path d="M8 8 V40 H40" stroke="rgba(255,255,255,0.3)" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"
+                    initial={{ pathLength: 0 }} animate={isInView ? { pathLength: 1 } : {}} transition={{ duration: 1 }} />
+
+                {/* Area Fill */}
+                <motion.path d="M8 34 L16 26 L24 28 L32 16 L40 8 V40 H8 Z" fill="rgba(74, 216, 136, 0.2)" stroke="none"
+                    initial={{ opacity: 0 }} animate={isInView ? { opacity: 1 } : {}} transition={{ duration: 0.8, delay: 0.5 }} />
+
+                {/* Line trend */}
+                <motion.path d="M8 34 L16 26 L24 28 L32 16 L40 8" stroke="#4ad888" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"
+                    initial={{ pathLength: 0 }} animate={isInView ? { pathLength: 1 } : {}} transition={{ duration: 1.2, delay: 0.2 }} />
+
+                {/* Data Points */}
+                {[
+                    { cx: 8, cy: 34 },
+                    { cx: 16, cy: 26 },
+                    { cx: 24, cy: 28 },
+                    { cx: 32, cy: 16 },
+                    { cx: 40, cy: 8 }
+                ].map((point, i) => (
+                    <motion.circle key={i} cx={point.cx} cy={point.cy} r="2" fill="#4ad888"
+                        initial={{ scale: 0 }} animate={isInView ? { scale: 1 } : {}} transition={{ duration: 0.3, delay: 1 + (i * 0.1) }} />
                 ))}
-                <motion.path d="M8 10 L16 18 L28 12 L40 6" stroke="#4ad888" strokeWidth="2" fill="none" strokeLinecap="round"
-                    initial={{ pathLength: 0 }} animate={isInView ? { pathLength: 1 } : {}} transition={{ duration: 1, delay: 0.8 }} />
             </svg>
         ),
         crm: (
