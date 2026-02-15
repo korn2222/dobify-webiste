@@ -16,7 +16,10 @@ export const contentType = 'image/png';
 
 export default async function Image() {
     // Logo
+    // Use Base64 data URL to ensure reliability across environments
     const logoData = await readFile(join(process.cwd(), 'public/logo.png'));
+    const logoBase64 = logoData.toString('base64');
+    const logoSrc = `data:image/png;base64,${logoBase64}`;
 
     return new ImageResponse(
         (
@@ -34,7 +37,7 @@ export default async function Image() {
             >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                    src={logoData.buffer as any}
+                    src={logoSrc}
                     alt="Dobify Logo"
                     width="400"
                     height="400"

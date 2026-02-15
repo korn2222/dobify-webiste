@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 import { getBlogPosts, getCaseStudies } from '@/lib/content';
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://dobify.com';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://dobify.org';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const locales = ['en', 'pl'];
