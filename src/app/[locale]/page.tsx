@@ -117,11 +117,11 @@ function SocialProof() {
         <section ref={ref} style={{ padding: '60px 0' }}>
             <div className="container">
                 <motion.div
-                    className="glass glass-highlight"
+                    className="glass glass-highlight grid grid-cols-3 gap-2 md:gap-8"
                     initial={{ opacity: 0, y: 30 }}
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.8 }}
-                    style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '2rem', padding: '2.5rem 2rem', textAlign: 'center' }}
+                    style={{ padding: '1.5rem 1rem', textAlign: 'center' }}
                 >
                     {stats.map((stat, i) => (
                         <motion.div
@@ -130,10 +130,11 @@ function SocialProof() {
                             animate={isInView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 0.5, delay: i * 0.1 }}
                         >
-                            <div style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', fontWeight: 800, color: '#4ad888', marginBottom: '0.25rem' }}>
+                            {/* Adjusted clamp for smaller mobile screens */}
+                            <div style={{ fontSize: 'clamp(1.25rem, 3vw, 2.5rem)', fontWeight: 800, color: '#4ad888', marginBottom: '0.25rem', lineHeight: 1.2 }}>
                                 <AnimatedCounter target={stat.value} suffix={stat.suffix} />
                             </div>
-                            <div style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)', fontWeight: 500 }}>{stat.label}</div>
+                            <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.5)', fontWeight: 500, lineHeight: 1.2 }}>{stat.label}</div>
                         </motion.div>
                     ))}
                 </motion.div>
