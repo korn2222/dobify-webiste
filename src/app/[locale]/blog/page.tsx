@@ -11,6 +11,7 @@ export async function generateMetadata({
     const t = await getTranslations({ locale, namespace: 'metadata' });
 
     return {
+        metadataBase: new URL('https://dobify.org'),
         title: t('blogTitle'),
         description: t('blogDescription'),
         alternates: {
