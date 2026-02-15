@@ -8,5 +8,5 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
-      - NEXT_PUBLIC_SITE_URL=https://dobify.com
+      - NEXT_PUBLIC_SITE_URL=https://dobify.org
     restart: always
