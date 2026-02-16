@@ -149,7 +149,9 @@
         "blogTitle": "Blog — Dobify",
         "blogDescription": "Insights on AI automation, marketing, and business growth strategies.",
         "caseStudiesTitle": "Case Studies — Dobify",
-        "caseStudiesDescription": "Real results from businesses using Dobify's AI-powered marketing automation."
+        "caseStudiesDescription": "Real results from businesses using Dobify's AI-powered marketing automation.",
+        "privacyPolicyTitle": "Privacy Policy — Dobify",
+        "privacyPolicyDescription": "Privacy Policy and GDPR information for Dobify."
     },
     "notFound": {
         "title": "Page Not Found",
