@@ -155,5 +155,69 @@
         "title": "Page Not Found",
         "description": "Sorry, we couldn't find the page you're looking for.",
         "button": "Back to Home"
+    },
+    "privacyPolicy": {
+        "title": "Privacy Policy",
+        "lastUpdated": "Last updated: February 16, 2026",
+        "intro": "At DOBIFY SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ, we value your privacy. This Privacy Policy explains how we collect, use, and protect your information when you use our website and services.",
+        "companyInfo": "DOBIFY SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ\nUL. TWARDOWSKIEGO 19, 05-070 SULEJÓWEK\nNIP: 8222420250\nREGON: 543186808\nKRS: 0001204127",
+        "sections": {
+            "collection": {
+                "title": "1. Information We Collect",
+                "content": "We collect information you provide directly to us, such as when you fill out a form, request an audit, or contact us. This may include your name, email address, phone number, and company name. We also automatically collect certain information about your device and usage of our website using cookies and similar technologies."
+            },
+            "use": {
+                "title": "2. How We Use Your Information",
+                "content": "We use your information to provide, maintain, and improve our services, communicate with you, process requests, and send you marketing communications (which you can opt out of at any time)."
+            },
+            "sharing": {
+                "title": "3. Information Sharing",
+                "content": "We do not sell your personal information. We may share your information with third-party service providers who help us operate our business (e.g., hosting, analytics, email delivery), subject to confidentiality obligations."
+            },
+            "security": {
+                "title": "4. Data Security",
+                "content": "We implement reasonable security measures to protect your information. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security."
+            },
+            "rights": {
+                "title": "5. Your Rights",
+                "content": "Depending on your location (including under GDPR), you may have rights to access, correct, delete, or restrict the processing of your personal data. Contact us to exercise these rights."
+            },
+            "contact": {
+                "title": "6. Contact Us",
+                "content": "If you have any questions about this Privacy Policy, please contact us at our registered address above."
+            }
+        }
+    },
+    "termsOfUse": {
+        "title": "Terms of Use",
+        "lastUpdated": "Last updated: February 16, 2026",
+        "intro": "Welcome to Dobify. These Terms of Use govern your access to and use of our website and services provided by DOBIFY SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ.",
+        "companyInfo": "DOBIFY SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ\nUL. TWARDOWSKIEGO 19, 05-070 SULEJÓWEK\nNIP: 8222420250\nREGON: 543186808\nKRS: 0001204127",
+        "sections": {
+            "acceptance": {
+                "title": "1. Acceptance of Terms",
+                "content": "By accessing or using our website, you agree to be bound by these Terms of Use and our Privacy Policy. If you do not agree, do not use our services."
+            },
+            "use": {
+                "title": "2. Use of Services",
+                "content": "You agree to use our services only for lawful purposes and in accordance with these Terms. You must not use our website in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website."
+            },
+            "intellectualProperty": {
+                "title": "3. Intellectual Property",
+                "content": "All content, features, and functionality on this website are owned by Dobify and are protected by international copyright, trademark, and other intellectual property laws."
+            },
+            "liability": {
+                "title": "4. Limitation of Liability",
+                "content": "To the fullest extent permitted by law, Dobify shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues."
+            },
+            "changes": {
+                "title": "5. Changes to Terms",
+                "content": "We reserve the right to modify these Terms at any time. We will provide notice of significant changes by posting the new Terms on this site."
+            },
+            "law": {
+                "title": "6. Governing Law",
+                "content": "These Terms shall be governed by and construed in accordance with the laws of Poland, without regard to its conflict of law provisions."
+            }
+        }
     }
 }

@@ -59,8 +59,8 @@ export default function Footer() {
                             {t('legal')}
                         </h4>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                            <a href="#" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontSize: '0.925rem' }}>{t('privacy')}</a>
-                            <a href="#" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontSize: '0.925rem' }}>{t('terms')}</a>
+                            <Link href="/privacy-policy" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontSize: '0.925rem' }}>{t('privacy')}</Link>
+                            <Link href="/terms-of-use" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontSize: '0.925rem' }}>{t('terms')}</Link>
                         </div>
                     </div>
                 </div>

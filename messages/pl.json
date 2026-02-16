@@ -155,5 +155,69 @@
         "title": "Strona nie znaleziona",
         "description": "Przepraszamy, nie mogliśmy znaleźć strony, której szukasz.",
         "button": "Wróć do strony głównej"
+    },
+    "privacyPolicy": {
+        "title": "Polityka Prywatności",
+        "lastUpdated": "Ostatnia aktualizacja: 16 lutego 2026",
+        "intro": "W DOBIFY SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ cenimy Twoją prywatność. Niniejsza Polityka Prywatności wyjaśnia, w jaki sposób gromadzimy, wykorzystujemy i chronimy Twoje informacje podczas korzystania z naszej strony internetowej i usług.",
+        "companyInfo": "DOBIFY SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ\nUL. TWARDOWSKIEGO 19, 05-070 SULEJÓWEK\nNIP: 8222420250\nREGON: 543186808\nKRS: 0001204127",
+        "sections": {
+            "collection": {
+                "title": "1. Informacje, które gromadzimy",
+                "content": "Gromadzimy informacje, które nam bezpośrednio przekazujesz, na przykład wypełniając formularz, prosząc o audyt lub kontaktując się z nami. Może to obejmować Twoje imię i nazwisko, adres e-mail, numer telefonu i nazwę firmy. Gromadzimy również automatycznie pewne informacje o Twoim urządzeniu i korzystaniu z naszej strony internetowej za pomocą plików cookie i podobnych technologii."
+            },
+            "use": {
+                "title": "2. Jak wykorzystujemy Twoje informacje",
+                "content": "Wykorzystujemy Twoje informacje w celu świadczenia, utrzymywania i ulepszania naszych usług, komunikowania się z Tobą, przetwarzania żądań i przesyłania komunikacji marketingowej (z której możesz zrezygnować w dowolnym momencie)."
+            },
+            "sharing": {
+                "title": "3. Udostępnianie informacji",
+                "content": "Nie sprzedajemy Twoich danych osobowych. Możemy udostępniać Twoje informacje zewnętrznym dostawcom usług, którzy pomagają nam prowadzić naszą działalność (np. hosting, analityka, dostarczanie e-maili), z zachowaniem zobowiązań do poufności."
+            },
+            "security": {
+                "title": "4. Bezpieczeństwo danych",
+                "content": "Stosujemy rozsądne środki bezpieczeństwa w celu ochrony Twoich informacji. Jednak żadna metoda transmisji przez Internet nie jest w 100% bezpieczna i nie możemy zagwarantować całkowitego bezpieczeństwa."
+            },
+            "rights": {
+                "title": "5. Twoje prawa",
+                "content": "W zależności od lokalizacji (w tym na mocy RODO i polskiego prawa), możesz mieć prawo do dostępu, poprawiania, usuwania lub ograniczania przetwarzania swoich danych osobowych. Skontaktuj się z nami, aby skorzystać z tych praw."
+            },
+            "contact": {
+                "title": "6. Kontakt",
+                "content": "Jeśli masz jakiekolwiek pytania dotyczące niniejszej Polityki Prywatności, skontaktuj się z nami pod naszym zarejestrowanym adresem powyżej."
+            }
+        }
+    },
+    "termsOfUse": {
+        "title": "Regulamin",
+        "lastUpdated": "Ostatnia aktualizacja: 16 lutego 2026",
+        "intro": "Witamy w Dobify. Niniejszy Regulamin określa zasady dostępu i korzystania z naszej strony internetowej i usług świadczonych przez DOBIFY SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ.",
+        "companyInfo": "DOBIFY SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ\nUL. TWARDOWSKIEGO 19, 05-070 SULEJÓWEK\nNIP: 8222420250\nREGON: 543186808\nKRS: 0001204127",
+        "sections": {
+            "acceptance": {
+                "title": "1. Akceptacja warunków",
+                "content": "Uzyskując dostęp lub korzystając z naszej strony internetowej, zgadzasz się przestrzegać niniejszego Regulaminu i naszej Polityki Prywatności. Jeśli nie zgadzasz się z tymi warunkami, nie korzystaj z naszych usług."
+            },
+            "use": {
+                "title": "2. Korzystanie z usług",
+                "content": "Zgadzasz się korzystać z naszych usług wyłącznie zgodnie z prawem i niniejszym Regulaminem. Nie możesz korzystać z naszej strony internetowej w sposób, który powoduje lub może spowodować uszkodzenie strony lub osłabienie dostępności lub dostępności strony."
+            },
+            "intellectualProperty": {
+                "title": "3. Własność intelektualna",
+                "content": "Wszystkie treści, funkcje i funkcjonalności na tej stronie są własnością Dobify i są chronione międzynarodowymi prawami autorskimi, znakami towarowymi i innymi prawami własności intelektualnej."
+            },
+            "liability": {
+                "title": "4. Ograniczenie odpowiedzialności",
+                "content": "W najszerszym zakresie dozwolonym przez prawo, Dobify nie ponosi odpowiedzialności za jakiekolwiek szkody pośrednie, przypadkowe, specjalne, wynikowe lub karne, ani za utratę zysków lub przychodów."
+            },
+            "changes": {
+                "title": "5. Zmiany w regulaminie",
+                "content": "Zastrzegamy sobie prawo do modyfikacji niniejszego Regulaminu w dowolnym momencie. Powiadomimy o istotnych zmianach, publikując nowy Regulamin na tej stronie."
+            },
+            "law": {
+                "title": "6. Prawo właściwe",
+                "content": "Niniejszy Regulamin podlega prawu polskiemu i zgodnie z nim będzie interpretowany, bez względu na przepisy kolizyjne."
+            }
+        }
     }
 }
