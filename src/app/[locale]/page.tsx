@@ -2,8 +2,8 @@
 
 import { useTranslations } from 'next-intl';
 import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
-import { AnimatedCounter, AnimatedBarChart, AnimatedLineChart, AnimatedDonutChart } from '@/components/Charts';
+import { useRef, useState } from 'react';
+import { AnimatedCounter } from '@/components/Charts';
 import FeatureIcon from '@/components/FeatureIcon';
 
 /* ============================================================
@@ -138,6 +138,132 @@ function SocialProof() {
                         </motion.div>
                     ))}
                 </motion.div>
+            </div>
+        </section>
+    );
+}
+
+/* ============================================================
+   TECH STACK CAROUSEL
+   ============================================================ */
+function TechStack() {
+    const [failedLogos, setFailedLogos] = useState<Set<string>>(new Set());
+
+
+
+    const handleImageError = (name: string) => {
+        setFailedLogos(prev => {
+            const next = new Set(prev);
+            next.add(name);
+            return next;
+        });
+    };
+
+    // Use high-quality SVGs.
+    // Use "white" variants for dark logos (Notion, GitHub, Make, Claude) so they are visible on the dark "tinted" background
+    const logos = [
+        { name: 'Supabase', src: 'https://cdn.simpleicons.org/supabase' },
+        { name: 'WhatsApp', src: 'https://cdn.simpleicons.org/whatsapp' },
+        { name: 'Airtable', src: 'https://cdn.simpleicons.org/airtable' },
+        { name: 'Make', src: 'https://cdn.simpleicons.org/make/white' }, // Use white for visibility
+        { name: 'n8n', src: 'https://cdn.simpleicons.org/n8n' },
+        { name: 'Slack', src: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/slack.svg' },
+        { name: 'Messenger', src: 'https://cdn.simpleicons.org/messenger' },
+        { name: 'Telegram', src: 'https://cdn.simpleicons.org/telegram' },
+        { name: 'HubSpot', src: 'https://cdn.simpleicons.org/hubspot' },
+        { name: 'Notion', src: 'https://cdn.simpleicons.org/notion/white' }, // Use white for visibility
+        { name: 'Stripe', src: 'https://cdn.simpleicons.org/stripe' },
+        { name: 'GitHub', src: 'https://cdn.simpleicons.org/github/white' }, // Use white for visibility
+        { name: 'Word', src: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/microsoftword.svg' },
+        { name: 'Google', src: 'https://cdn.simpleicons.org/google' },
+        { name: 'SMS', src: 'https://cdn.simpleicons.org/imessage' },
+        { name: 'Sheets', src: 'https://cdn.simpleicons.org/googlesheets' },
+        { name: 'Excel', src: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/microsoftexcel.svg' },
+        { name: 'ChatGPT', src: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg' }, // Use white for visibility
+        { name: 'Claude', src: 'https://cdn.simpleicons.org/anthropic/white' }, // Force white
+        { name: 'Gemini', src: 'https://cdn.simpleicons.org/googlegemini' },
+        { name: 'Zapier', src: 'https://cdn.simpleicons.org/zapier' },
+    ];
+
+    return (
+        <section className="section" style={{ padding: '60px 0', overflow: 'hidden' }}>
+            <div className="container">
+                <p style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '0.85rem', fontWeight: 600, letterSpacing: '0.05em', color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase' }}>
+                    BUILD WITH YOUR FAVORITE TECH
+                </p>
+                {/* Added py-4 (padding) to mask container to allow zoom scaling without clipping top/bottom */}
+                <div style={{ position: 'relative', overflow: 'visible', padding: '20px 0', maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' }}>
+                    {/* Using 4 sets of logos ensures seamless loop with translateX(-50%) animation for wide screens */}
+                    <div className="animate-marquee" style={{ display: 'flex', gap: '3rem', alignItems: 'center' }}>
+                        {[...logos, ...logos, ...logos, ...logos].map((logo, i) => {
+                            if (failedLogos.has(logo.name)) return null;
+
+                            // Identify monochrome logos that should stay white on hover (Notion, GitHub, etc.)
+                            const isMonochrome = ['Notion', 'GitHub', 'Make', 'ChatGPT', 'Claude', 'Excel', 'Word', 'Slack'].includes(logo.name);
+
+                            return (
+                                <div
+                                    key={`${logo.name}-${i}`}
+                                    className="tech-icon-container"
+                                    style={{
+                                        flexShrink: 0,
+                                        width: '48px',
+                                        height: '48px',
+                                        borderRadius: '12px',
+                                        background: 'rgba(255,255,255,0.03)', // Much more tinted/subtle (basically transparent grey)
+                                        border: '1px solid rgba(255,255,255,0.05)', // Very subtle rim
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                                        cursor: 'pointer'
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.transform = 'scale(1.2)';
+                                        e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)';
+                                        e.currentTarget.style.background = 'rgba(255,255,255,0.1)'; // Slightly brighter on hover
+                                        const img = e.currentTarget.querySelector('img');
+                                        if (img) {
+                                            img.style.opacity = '1';
+                                            // Only remove filter for color logos. Keep monochrome logos white.
+                                            if (!isMonochrome) {
+                                                img.style.filter = 'none';
+                                            }
+                                        }
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.transform = 'scale(1)';
+                                        e.currentTarget.style.borderColor = 'rgba(255,255,255,0.05)';
+                                        e.currentTarget.style.background = 'rgba(255,255,255,0.03)';
+                                        const img = e.currentTarget.querySelector('img');
+                                        if (img) {
+                                            img.style.opacity = '0.4'; // Very subtle default state
+                                            img.style.filter = 'brightness(0) invert(1)'; // Force White
+                                        }
+                                    }}
+                                >
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img
+                                        src={logo.src}
+                                        alt={logo.name}
+                                        style={{
+                                            height: '24px',
+                                            width: '24px',
+                                            objectFit: 'contain',
+                                            opacity: 0.4, // Subtle by default
+                                            filter: 'brightness(0) invert(1)', // Force White
+                                            transition: 'all 0.3s'
+                                        }}
+                                        onError={(e) => {
+                                            e.currentTarget.style.display = 'none';
+                                            handleImageError(logo.name);
+                                        }}
+                                    />
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
             </div>
         </section>
     );
@@ -304,12 +430,19 @@ function HowItWorks() {
 }
 
 /* ============================================================
-   RESULTS / METRICS
+   CUSTOM SOLUTIONS
    ============================================================ */
-function Results() {
-    const t = useTranslations('results');
+function CustomSolutions() {
+    const t = useTranslations('customSolutions');
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: '-100px' });
+
+    const solutions = [
+        { key: 'aiAutomation' as const },
+        { key: 'appDevelopment' as const },
+        { key: 'dataManagement' as const },
+        { key: 'webDevelopment' as const },
+    ];
 
     return (
         <section ref={ref} className="section">
@@ -323,27 +456,24 @@ function Results() {
                     </motion.p>
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
-                    {/* Bar Chart */}
-                    <motion.div className="glass-card glass-highlight" initial={{ opacity: 0, y: 30 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}>
-                        <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.25rem' }}>{t('chart1Title')}</h3>
-                        <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)', marginBottom: '1rem' }}>{t('chart1Desc')}</p>
-                        <AnimatedBarChart />
-                    </motion.div>
-
-                    {/* Line Chart */}
-                    <motion.div className="glass-card glass-highlight" initial={{ opacity: 0, y: 30 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.15 }}>
-                        <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.25rem' }}>{t('chart2Title')}</h3>
-                        <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)', marginBottom: '1rem' }}>{t('chart2Desc')}</p>
-                        <AnimatedLineChart />
-                    </motion.div>
-
-                    {/* Donut Chart */}
-                    <motion.div className="glass-card glass-highlight" initial={{ opacity: 0, y: 30 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.3 }}>
-                        <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.25rem' }}>{t('chart3Title')}</h3>
-                        <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)', marginBottom: '1rem' }}>{t('chart3Desc')}</p>
-                        <AnimatedDonutChart />
-                    </motion.div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {solutions.map((solution, i) => (
+                        <motion.div
+                            key={solution.key}
+                            className="glass-card glass-highlight"
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={isInView ? { opacity: 1, y: 0 } : {}}
+                            transition={{ duration: 0.6, delay: i * 0.1 }}
+                            style={{ padding: '2rem' }}
+                        >
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                                <h3 style={{ fontSize: '1.2rem', fontWeight: 700 }}>{t(`${solution.key}.title`)}</h3>
+                            </div>
+                            <p style={{ fontSize: '0.925rem', color: 'rgba(255,255,255,0.55)', lineHeight: 1.7 }}>
+                                {t(`${solution.key}.description`)}
+                            </p>
+                        </motion.div>
+                    ))}
                 </div>
             </div>
         </section>
@@ -501,9 +631,10 @@ export default function HomePage() {
 
             <Hero />
             <SocialProof />
+            <TechStack />
             <Features />
             <HowItWorks />
-            <Results />
+            <CustomSolutions />
             <Testimonials />
             <CTASection />
         </>

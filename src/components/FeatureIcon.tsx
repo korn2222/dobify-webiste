@@ -4,7 +4,7 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 interface FeatureIconProps {
-    type: 'leadGen' | 'aiCaller' | 'dataAnalysis' | 'crm' | 'notificationBot' | 'smsCampaigns';
+    type: 'leadGen' | 'aiCaller' | 'dataAnalysis' | 'crm' | 'notificationBot' | 'smsCampaigns' | 'aiAutomation' | 'appDevelopment' | 'webDevelopment' | 'dataManagement';
 }
 
 export default function FeatureIcon({ type }: FeatureIconProps) {
@@ -108,6 +108,58 @@ export default function FeatureIcon({ type }: FeatureIconProps) {
                     initial={{ opacity: 0, x: -4 }} animate={isInView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.4, delay: 1.2 }} />
                 <motion.path d="M40 14h2" stroke="rgba(74,216,136,0.4)" strokeWidth="2" strokeLinecap="round"
                     initial={{ opacity: 0, x: -4 }} animate={isInView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.4, delay: 1.4 }} />
+            </svg>
+        ),
+        aiAutomation: (
+            <svg {...iconProps}>
+                <motion.path d="M24 8a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4V12a4 4 0 0 1 4-4h12z" stroke="#4ad888" strokeWidth="2" fill="none" rx="2"
+                    initial={{ pathLength: 0 }} animate={isInView ? { pathLength: 1 } : {}} transition={{ duration: 1 }} />
+                <motion.circle cx="36" cy="12" r="3" stroke="#4ad888" strokeWidth="2" fill="none"
+                    initial={{ scale: 0 }} animate={isInView ? { scale: 1 } : {}} transition={{ duration: 0.5, delay: 0.5 }} />
+                <motion.path d="M28 12h5" stroke="#4ad888" strokeWidth="2"
+                    initial={{ pathLength: 0 }} animate={isInView ? { pathLength: 1 } : {}} transition={{ duration: 0.5, delay: 0.8 }} />
+                <motion.path d="M20 22h-8" stroke="#4ad888" strokeWidth="2"
+                    initial={{ pathLength: 0 }} animate={isInView ? { pathLength: 1 } : {}} transition={{ duration: 0.5, delay: 1 }} />
+                <motion.circle cx="24" cy="24" r="2" fill="#4ad888"
+                    initial={{ scale: 0 }} animate={isInView ? { scale: 1 } : {}} transition={{ duration: 0.5, delay: 1.2 }} />
+            </svg>
+        ),
+        appDevelopment: (
+            <svg {...iconProps}>
+                <motion.rect x="14" y="6" width="20" height="36" rx="3" stroke="#4ad888" strokeWidth="2" fill="none"
+                    initial={{ pathLength: 0 }} animate={isInView ? { pathLength: 1 } : {}} transition={{ duration: 1 }} />
+                <motion.path d="M22 36h4" stroke="#4ad888" strokeWidth="2" strokeLinecap="round"
+                    initial={{ pathLength: 0 }} animate={isInView ? { pathLength: 1 } : {}} transition={{ duration: 0.5, delay: 0.5 }} />
+                <motion.rect x="18" y="12" width="12" height="16" rx="1" fill="rgba(74,216,136,0.1)" stroke="none"
+                    initial={{ opacity: 0 }} animate={isInView ? { opacity: 1 } : {}} transition={{ duration: 0.8, delay: 0.8 }} />
+            </svg>
+        ),
+        webDevelopment: (
+            <svg {...iconProps}>
+                <motion.rect x="4" y="8" width="40" height="32" rx="2" stroke="#4ad888" strokeWidth="2" fill="none"
+                    initial={{ pathLength: 0 }} animate={isInView ? { pathLength: 1 } : {}} transition={{ duration: 1 }} />
+                <motion.path d="M4 16h40" stroke="#4ad888" strokeWidth="2"
+                    initial={{ pathLength: 0 }} animate={isInView ? { pathLength: 1 } : {}} transition={{ duration: 0.8, delay: 0.3 }} />
+                <motion.circle cx="9" cy="12" r="1.5" fill="#4ad888"
+                    initial={{ scale: 0 }} animate={isInView ? { scale: 1 } : {}} transition={{ duration: 0.3, delay: 0.6 }} />
+                <motion.circle cx="14" cy="12" r="1.5" fill="#4ad888"
+                    initial={{ scale: 0 }} animate={isInView ? { scale: 1 } : {}} transition={{ duration: 0.3, delay: 0.7 }} />
+                <motion.path d="M14 28l-4 4 4 4" stroke="#4ad888" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"
+                    initial={{ pathLength: 0 }} animate={isInView ? { pathLength: 1 } : {}} transition={{ duration: 0.5, delay: 1 }} />
+                <motion.path d="M34 28l4 4-4 4" stroke="#4ad888" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"
+                    initial={{ pathLength: 0 }} animate={isInView ? { pathLength: 1 } : {}} transition={{ duration: 0.5, delay: 1.2 }} />
+            </svg>
+        ),
+        dataManagement: (
+            <svg {...iconProps}>
+                <motion.ellipse cx="24" cy="10" rx="14" ry="4" stroke="#4ad888" strokeWidth="2" fill="none"
+                    initial={{ pathLength: 0 }} animate={isInView ? { pathLength: 1 } : {}} transition={{ duration: 1 }} />
+                <motion.path d="M10 10v8c0 2.2 6.3 4 14 4s14-1.8 14-4v-8" stroke="#4ad888" strokeWidth="2" fill="none"
+                    initial={{ pathLength: 0 }} animate={isInView ? { pathLength: 1 } : {}} transition={{ duration: 1, delay: 0.3 }} />
+                <motion.path d="M10 18v8c0 2.2 6.3 4 14 4s14-1.8 14-4v-8" stroke="#4ad888" strokeWidth="2" fill="none"
+                    initial={{ pathLength: 0 }} animate={isInView ? { pathLength: 1 } : {}} transition={{ duration: 1, delay: 0.6 }} />
+                <motion.path d="M10 26v8c0 2.2 6.3 4 14 4s14-1.8 14-4v-8" stroke="#4ad888" strokeWidth="2" fill="none"
+                    initial={{ pathLength: 0 }} animate={isInView ? { pathLength: 1 } : {}} transition={{ duration: 1, delay: 0.9 }} />
             </svg>
         ),
     };

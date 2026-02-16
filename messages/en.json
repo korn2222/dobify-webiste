@@ -66,15 +66,25 @@
             "description": "Qualified leads get an AI-powered call within seconds—booking directly into your calendar."
         }
     },
-    "results": {
-        "title": "The Numbers Speak for Themselves",
-        "subtitle": "Average results across our client portfolio.",
-        "chart1Title": "Lead Response Time",
-        "chart1Desc": "Dobify vs Industry Average",
-        "chart2Title": "Revenue Growth",
-        "chart2Desc": "First 6 months with Dobify",
-        "chart3Title": "Lead Sources",
-        "chart3Desc": "Breakdown by channel"
+    "customSolutions": {
+        "title": "Custom Solutions",
+        "subtitle": "Tailored strategies for your unique business needs.",
+        "aiAutomation": {
+            "title": "AI Automation",
+            "description": "Streamline your operations with intelligent workflows. We build custom AI agents that handle repetitive tasks, from customer support to data processing."
+        },
+        "appDevelopment": {
+            "title": "App Development",
+            "description": "Transform your ideas into powerful mobile experiences. We design and develop native and cross-platform apps that are intuitive and scalable."
+        },
+        "webDevelopment": {
+            "title": "Web Development",
+            "description": "Create a stunning digital presence. Our custom web solutions combine cutting-edge technologies with premium design to deliver fast, responsive websites."
+        },
+        "dataManagement": {
+            "title": "Data Management",
+            "description": "Unlock the power of your data. We implement robust data architecture and analytics pipelines, ensuring your information is secure and accessible."
+        }
     },
     "testimonials": {
         "title": "Trusted by Growth-Obsessed Teams",

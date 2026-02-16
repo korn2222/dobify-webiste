@@ -66,15 +66,25 @@
             "description": "Zakwalifikowani leadzi otrzymują telefon od AI w ciągu sekund — rezerwacja bezpośrednio w Twoim kalendarzu."
         }
     },
-    "results": {
-        "title": "Liczby mówią same za siebie",
-        "subtitle": "Średnie wyniki w portfolio naszych klientów.",
-        "chart1Title": "Czas odpowiedzi na leada",
-        "chart1Desc": "Dobify vs średnia branżowa",
-        "chart2Title": "Wzrost przychodów",
-        "chart2Desc": "Pierwsze 6 miesięcy z Dobify",
-        "chart3Title": "Źródła leadów",
-        "chart3Desc": "Podział na kanały"
+    "customSolutions": {
+        "title": "Rozwiązania Niestandardowe",
+        "subtitle": "Strategie dopasowane do Twoich unikalnych potrzeb biznesowych.",
+        "aiAutomation": {
+            "title": "Automatyzacja AI",
+            "description": "Usprawnij swoje operacje dzięki inteligentnym przepływom pracy. Budujemy niestandardowych agentów AI, którzy obsługują powtarzalne zadania, od obsługi klienta po przetwarzanie danych."
+        },
+        "appDevelopment": {
+            "title": "Tworzenie Aplikacji",
+            "description": "Przekształć swoje pomysły w potężne doświadczenia mobilne. Projektujemy i tworzymy natywne i międzyplatformowe aplikacje, które są intuicyjne i skalowalne."
+        },
+        "webDevelopment": {
+            "title": "Tworzenie Stron WWW",
+            "description": "Stwórz oszałamiającą obecność cyfrową. Nasze niestandardowe rozwiązania webowe łączą najnowocześniejsze technologie z designem premium, aby dostarczać szybkie, responsywne strony."
+        },
+        "dataManagement": {
+            "title": "Zarządzanie Danymi",
+            "description": "Odblokuj moc swoich danych. Wdrażamy solidną architekturę danych i potoki analityczne, zapewniając bezpieczeństwo i dostępność Twoich informacji."
+        }
     },
     "testimonials": {
         "title": "Zaufali nam zespoły nastawione na wzrost",
