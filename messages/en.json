@@ -156,6 +156,24 @@
         "description": "Sorry, we couldn't find the page you're looking for.",
         "button": "Back to Home"
     },
+    "freeAudit": {
+        "title": "Book Your Free Audit",
+        "subtitle": "Discover how AI can revolutionize your business. Fill out the form below to get started.",
+        "form": {
+            "name": "Full Name",
+            "namePlaceholder": "John Doe",
+            "email": "Email Address",
+            "emailPlaceholder": "john@company.com",
+            "phone": "Phone Number",
+            "phonePlaceholder": "123 456 789",
+            "company": "Company Name",
+            "companyPlaceholder": "Acme Corp",
+            "submit": "Get Free Audit",
+            "submitting": "Submitting...",
+            "success": "Thank you! We'll be in touch shortly.",
+            "error": "Something went wrong. Please try again."
+        }
+    },
     "privacyPolicy": {
         "title": "Privacy Policy",
         "lastUpdated": "Last updated: February 16, 2026",

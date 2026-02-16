@@ -102,10 +102,11 @@ export default function Header() {
                         🌐 {otherLocale}
                     </Link>
 
+
                     {/* CTA */}
-                    <a href="#book-audit" className="btn-primary" style={{ fontSize: '0.875rem', padding: '0.625rem 1.25rem' }}>
+                    <Link href="/free-audit" className="btn-primary" style={{ fontSize: '0.875rem', padding: '0.625rem 1.25rem' }}>
                         {t('bookAudit')}
-                    </a>
+                    </Link>
                 </nav>
 
                 {/* Mobile Menu Button */}
@@ -182,9 +183,9 @@ export default function Header() {
                                 >
                                     🌐 {otherLocale}
                                 </Link>
-                                <a href="#book-audit" className="btn-primary" onClick={() => setIsMobileMenuOpen(false)} style={{ fontSize: '0.875rem', flex: 1, justifyContent: 'center' }}>
+                                <Link href="/free-audit" className="btn-primary" onClick={() => setIsMobileMenuOpen(false)} style={{ fontSize: '0.875rem', flex: 1, justifyContent: 'center' }}>
                                     {t('bookAudit')}
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </motion.div>

@@ -156,6 +156,24 @@
         "description": "Przepraszamy, nie mogliśmy znaleźć strony, której szukasz.",
         "button": "Wróć do strony głównej"
     },
+    "freeAudit": {
+        "title": "Zamów bezpłatny audyt",
+        "subtitle": "Odkryj, jak AI może zrewolucjonizować Twój biznes. Wypełnij poniższy formularz, aby rozpocząć.",
+        "form": {
+            "name": "Imię i Nazwisko",
+            "namePlaceholder": "Jan Kowalski",
+            "email": "Adres Email",
+            "emailPlaceholder": "jan@firma.pl",
+            "phone": "Numer Telefonu",
+            "phonePlaceholder": "123 456 789",
+            "company": "Nazwa Firmy",
+            "companyPlaceholder": "Firma Sp. z o.o.",
+            "submit": "Odbierz Audyt",
+            "submitting": "Wysyłanie...",
+            "success": "Dziękujemy! Skontaktujemy się wkrótce.",
+            "error": "Coś poszło nie tak. Spróbuj ponownie."
+        }
+    },
     "privacyPolicy": {
         "title": "Polityka Prywatności",
         "lastUpdated": "Ostatnia aktualizacja: 16 lutego 2026",

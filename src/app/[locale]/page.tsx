@@ -5,6 +5,7 @@ import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { AnimatedCounter } from '@/components/Charts';
 import FeatureIcon from '@/components/FeatureIcon';
+import { Link } from '@/i18n/navigation';
 
 /* ============================================================
    HERO SECTION
@@ -74,12 +75,12 @@ function Hero() {
                     transition={{ duration: 0.6, delay: 0.8 }}
                     style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}
                 >
-                    <a href="#book-audit" className="btn-primary" style={{ fontSize: '1.05rem', padding: '1rem 2.5rem' }}>
+                    <Link href="/free-audit" className="btn-primary" style={{ fontSize: '1.05rem', padding: '1rem 2.5rem' }}>
                         {t('cta')}
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
                             <path d="M3 8h10M9 4l4 4-4 4" />
                         </svg>
-                    </a>
+                    </Link>
                 </motion.div>
 
                 {/* Animated glow line */}
@@ -579,12 +580,12 @@ function CTASection() {
                     <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '1.1rem', lineHeight: 1.7, marginBottom: '2rem', maxWidth: '600px', margin: '0 auto 2rem' }}>
                         {t('subtitle')}
                     </p>
-                    <a href="#" className="btn-primary" style={{ fontSize: '1.1rem', padding: '1rem 2.5rem' }}>
+                    <Link href="/free-audit" className="btn-primary" style={{ fontSize: '1.1rem', padding: '1rem 2.5rem' }}>
                         {t('button')}
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
                             <path d="M3 8h10M9 4l4 4-4 4" />
                         </svg>
-                    </a>
+                    </Link>
                 </motion.div>
             </div>
         </section>
