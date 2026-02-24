@@ -32,6 +32,10 @@ export async function generateMetadata({
         description: study.description,
         alternates: {
             canonical: `/${locale}/case-studies/${slug}`,
+            languages: {
+                en: `/en/case-studies/${slug}`,
+                pl: `/pl/case-studies/${slug}`,
+            },
         },
         openGraph: {
             title: study.title,

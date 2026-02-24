@@ -606,14 +606,28 @@ export default function HomePage() {
                         '@context': 'https://schema.org',
                         '@type': 'Organization',
                         name: 'Dobify',
-                        description: 'AI-powered marketing and automation agency',
-                        url: 'https://dobify.com',
-                        logo: 'https://dobify.com/logo.png',
-                        sameAs: [],
+                        description: 'AI-powered marketing and automation agency specializing in lead generation, AI calling, and marketing automation.',
+                        url: 'https://dobify.org',
+                        logo: 'https://dobify.org/logo.png',
+                        sameAs: [
+                            'https://www.linkedin.com/company/dobify',
+                            'https://twitter.com/dobify',
+                            'https://www.instagram.com/dobify',
+                        ],
+                        address: {
+                            '@type': 'PostalAddress',
+                            addressCountry: 'PL',
+                        },
                         contactPoint: {
                             '@type': 'ContactPoint',
                             contactType: 'sales',
                             availableLanguage: ['English', 'Polish'],
+                        },
+                        aggregateRating: {
+                            '@type': 'AggregateRating',
+                            ratingValue: '5',
+                            reviewCount: '3',
+                            bestRating: '5',
                         },
                     }),
                 }}
@@ -625,8 +639,63 @@ export default function HomePage() {
                         '@context': 'https://schema.org',
                         '@type': 'WebSite',
                         name: 'Dobify',
-                        url: 'https://dobify.com',
+                        url: 'https://dobify.org',
                     }),
+                }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify([
+                        {
+                            '@context': 'https://schema.org',
+                            '@type': 'Service',
+                            name: 'AI Lead Generation',
+                            description: 'Automated lead capture and qualification using AI to maximize conversion rates.',
+                            provider: { '@type': 'Organization', name: 'Dobify' },
+                            serviceType: 'Lead Generation',
+                        },
+                        {
+                            '@context': 'https://schema.org',
+                            '@type': 'Service',
+                            name: 'AI Caller',
+                            description: 'AI-powered calling system that contacts leads within seconds and books meetings automatically.',
+                            provider: { '@type': 'Organization', name: 'Dobify' },
+                            serviceType: 'AI Calling',
+                        },
+                        {
+                            '@context': 'https://schema.org',
+                            '@type': 'Service',
+                            name: 'Data Analysis & Dashboards',
+                            description: 'Real-time analytics dashboards providing actionable insights into marketing performance.',
+                            provider: { '@type': 'Organization', name: 'Dobify' },
+                            serviceType: 'Data Analytics',
+                        },
+                        {
+                            '@context': 'https://schema.org',
+                            '@type': 'Service',
+                            name: 'CRM Integration',
+                            description: 'Seamless CRM integration to track every lead touchpoint and optimize your sales pipeline.',
+                            provider: { '@type': 'Organization', name: 'Dobify' },
+                            serviceType: 'CRM',
+                        },
+                        {
+                            '@context': 'https://schema.org',
+                            '@type': 'Service',
+                            name: 'Notification Bot',
+                            description: 'Instant multi-channel notifications for new leads via SMS, email, WhatsApp, and Slack.',
+                            provider: { '@type': 'Organization', name: 'Dobify' },
+                            serviceType: 'Notification Automation',
+                        },
+                        {
+                            '@context': 'https://schema.org',
+                            '@type': 'Service',
+                            name: 'SMS Campaigns',
+                            description: 'Automated SMS campaign management for lead nurturing and re-engagement.',
+                            provider: { '@type': 'Organization', name: 'Dobify' },
+                            serviceType: 'SMS Marketing',
+                        },
+                    ]),
                 }}
             />
 

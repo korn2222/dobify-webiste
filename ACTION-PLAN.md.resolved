@@ -1,0 +1,68 @@
+# SEO Action Plan — dobify.org
+
+Prioritized recommendations from the full SEO audit (Score: **52/100**).
+
+---
+
+## 🔴 Critical — Fix Immediately
+
+| # | Issue | File | Est. Time | Impact |
+|---|-------|------|-----------|--------|
+| 1 | **Fix schema domain** `.com` → `.org` | [page.tsx](file:///Users/kornel/Storage/Dysk%204%20(projekty)/Antigravity/Websites/Dobify/src/app/[locale]/page.tsx#L610-L628) | 5 min | Schema identity mismatch confuses search engines |
+| 2 | **Add security headers** (HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy) | [next.config.ts](file:///Users/kornel/Storage/Dysk%204%20(projekty)/Antigravity/Websites/Dobify/next.config.ts#L11-L23) | 15 min | Trust signals + security compliance |
+| 3 | **Add missing pages to sitemap** (`free-audit`, `privacy-policy`, `terms-of-use`) | [sitemap.ts](file:///Users/kornel/Storage/Dysk%204%20(projekty)/Antigravity/Websites/Dobify/src/app/sitemap.ts) | 10 min | Unindexed conversion pages |
+
+---
+
+## 🟠 High — Fix Within 1 Week
+
+| # | Issue | File | Est. Time | Impact |
+|---|-------|------|-----------|--------|
+| 4 | **Replace placeholder blog content** with real MDX/CMS-driven articles | [blog/[slug]/page.tsx](file:///Users/kornel/Storage/Dysk%204%20(projekty)/Antigravity/Websites/Dobify/src/app/[locale]/blog/[slug]/page.tsx#L58-L86) | 4-8 hrs | Content quality, E-E-A-T, organic traffic |
+| 5 | **Replace placeholder case study content** with real data | [case-studies/[slug]/page.tsx](file:///Users/kornel/Storage/Dysk%204%20(projekty)/Antigravity/Websites/Dobify/src/app/[locale]/case-studies/[slug]/page.tsx#L57-L75) | 2-4 hrs | Conversion driver, authority signals |
+| 6 | **Complete Organization schema** — add `telephone`, `address`, `sameAs` (social links) | [page.tsx#L606-L618](file:///Users/kornel/Storage/Dysk%204%20(projekty)/Antigravity/Websites/Dobify/src/app/[locale]/page.tsx#L606-L618) | 15 min | Rich results + entity clarity |
+| 7 | **Add hreflang alternates to blog post & case study metadata** | [blog/[slug]/page.tsx](file:///Users/kornel/Storage/Dysk%204%20(projekty)/Antigravity/Websites/Dobify/src/app/[locale]/blog/[slug]/page.tsx#L30-L42) + case-studies equivalent | 20 min | International SEO targeting |
+| 8 | **Fix unique meta descriptions** for blog listing and case studies listing | Blog/case-studies [page.tsx](file:///Users/kornel/Storage/Dysk%204%20%28projekty%29/Antigravity/Websites/Dobify/src/app/%5Blocale%5D/page.tsx) [generateMetadata](file:///Users/kornel/Storage/Dysk%204%20%28projekty%29/Antigravity/Websites/Dobify/src/app/%5Blocale%5D/blog/%5Bslug%5D/page.tsx#20-44) | 15 min | Click-through rates in SERPs |
+| 9 | **Fix mobile horizontal overflow** — add `overflow-x: hidden` on sections with orbs and marquee | [globals.css](file:///Users/kornel/Storage/Dysk%204%20(projekty)/Antigravity/Websites/Dobify/src/app/globals.css) | 10 min | CLS + mobile UX |
+
+---
+
+## 🟡 Medium — Fix Within 1 Month
+
+| # | Issue | File | Est. Time | Impact |
+|---|-------|------|-----------|--------|
+| 10 | **Create `/llms.txt`** with structured content guide for AI crawlers | New: `public/llms.txt` | 30 min | AI search visibility |
+| 11 | **Add AI crawler rules** to robots.txt (explicitly allow GPTBot, ClaudeBot, PerplexityBot) | [robots.ts](file:///Users/kornel/Storage/Dysk%204%20(projekty)/Antigravity/Websites/Dobify/src/app/robots.ts) | 10 min | AI search citation eligibility |
+| 12 | **Add `BreadcrumbList` schema** to all pages | Layout or page components | 30 min | Rich results in SERPs |
+| 13 | **Add `Service` schema** for 6 listed services | [page.tsx](file:///Users/kornel/Storage/Dysk%204%20(projekty)/Antigravity/Websites/Dobify/src/app/[locale]/page.tsx) | 30 min | Service visibility in search |
+| 14 | **Self-host tech stack icons** instead of 21 external CDN requests | [page.tsx](file:///Users/kornel/Storage/Dysk%204%20%28projekty%29/Antigravity/Websites/Dobify/src/app/%5Blocale%5D/page.tsx) TechStack section | 1 hr | Performance + fewer DNS lookups |
+| 15 | **Move JSON-LD to server-rendered components** instead of client component | Restructure page.tsx | 1 hr | Faster schema processing by Google |
+| 16 | **Populate footer Services links** | [Footer.tsx](file:///Users/kornel/Storage/Dysk%204%20(projekty)/Antigravity/Websites/Dobify/src/components/Footer.tsx) | 15 min | Internal linking + navigation |
+| 17 | **Add `Review`/`AggregateRating` schema** for testimonials | [page.tsx](file:///Users/kornel/Storage/Dysk%204%20(projekty)/Antigravity/Websites/Dobify/src/app/[locale]/page.tsx) Testimonials section | 20 min | Social proof in rich results |
+| 18 | **Remove deprecated `changefreq`/`priority`** from sitemap | [sitemap.ts](file:///Users/kornel/Storage/Dysk%204%20(projekty)/Antigravity/Websites/Dobify/src/app/sitemap.ts) | 5 min | Clean sitemap (ignored by Google anyway) |
+
+---
+
+## 🟢 Low — Backlog
+
+| # | Issue | Est. Time | Impact |
+|---|-------|-----------|--------|
+| 19 | Create author bio / about page | 2 hrs | E-E-A-T expertise signals |
+| 20 | Add internal cross-links between blog posts | 30 min | Internal link equity |
+| 21 | Implement IndexNow for Bing/Yandex | 1 hr | Faster indexing on non-Google engines |
+| 22 | Add `ContactPage` schema to free-audit page | 15 min | Entity clarity |
+| 23 | Build entity presence on Wikipedia, Reddit, YouTube, LinkedIn | Ongoing | AI citation eligibility (brand mentions > backlinks) |
+| 24 | Optimize [logo.png](file:///Users/kornel/Storage/Dysk%204%20%28projekty%29/Antigravity/Websites/Dobify/public/logo.png) (62KB) to WebP | 5 min | Minor perf gain |
+| 25 | Use `lastModified` with actual dates instead of `new Date()` for static sitemap entries | 10 min | Accurate crawl signals |
+| 26 | Add `fetchpriority="high"` to hero LCP element | 5 min | LCP improvement |
+
+---
+
+## Expected Score After Fixes
+
+| Priority | Estimated Score Gain |
+|----------|---------------------|
+| Critical (#1-3) | +8 points → 60/100 |
+| + High (#4-9) | +15 points → 75/100 |
+| + Medium (#10-18) | +10 points → 85/100 |
+| + Low (#19-26) | +5 points → 90/100 |

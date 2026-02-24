@@ -45,11 +45,11 @@ export default function Footer() {
                             {t('services')}
                         </h4>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                            <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.925rem' }}>{tFeatures('leadGen.title')}</span>
-                            <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.925rem' }}>{tFeatures('aiCaller.title')}</span>
-                            <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.925rem' }}>{tFeatures('dataAnalysis.title')}</span>
-                            <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.925rem' }}>{tFeatures('crm.title')}</span>
-                            <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.925rem' }}>{tFeatures('notificationBot.title')}</span>
+                            <Link href="/#features" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontSize: '0.925rem', transition: 'color 0.3s' }}>{tFeatures('leadGen.title')}</Link>
+                            <Link href="/#features" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontSize: '0.925rem', transition: 'color 0.3s' }}>{tFeatures('aiCaller.title')}</Link>
+                            <Link href="/#features" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontSize: '0.925rem', transition: 'color 0.3s' }}>{tFeatures('dataAnalysis.title')}</Link>
+                            <Link href="/#features" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontSize: '0.925rem', transition: 'color 0.3s' }}>{tFeatures('crm.title')}</Link>
+                            <Link href="/#features" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontSize: '0.925rem', transition: 'color 0.3s' }}>{tFeatures('notificationBot.title')}</Link>
                         </div>
                     </div>
 

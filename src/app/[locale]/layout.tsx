@@ -98,6 +98,23 @@ export default async function LocaleLayout({
         <html lang={locale} className="dark">
             <head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            '@context': 'https://schema.org',
+                            '@type': 'BreadcrumbList',
+                            itemListElement: [
+                                {
+                                    '@type': 'ListItem',
+                                    position: 1,
+                                    name: 'Home',
+                                    item: `https://dobify.org/${locale}`,
+                                },
+                            ],
+                        }),
+                    }}
+                />
             </head>
             <body className="bg-bg text-text-primary font-sans">
                 <NextIntlClientProvider locale={locale} messages={messages}>

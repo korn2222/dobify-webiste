@@ -1,0 +1,52 @@
+# Dobify — AI Marketing & Automation Agency
+
+> Dobify helps businesses automate lead generation, outreach, and customer engagement using AI-powered tools.
+
+## About
+
+Dobify is an AI marketing and automation agency based in Poland. We specialize in building custom automation systems that capture, qualify, and convert leads faster than any human sales team. Our solutions integrate with popular tools like HubSpot, Supabase, n8n, Make, WhatsApp, Slack, and more.
+
+## Services
+
+- **AI Lead Generation**: Automated lead capture and qualification using AI to maximize conversion rates.
+- **AI Caller**: AI-powered calling system that contacts leads within seconds and books meetings automatically.
+- **Data Analysis & Dashboards**: Real-time analytics dashboards providing actionable insights into marketing performance.
+- **CRM Integration**: Seamless CRM integration to track every lead touchpoint and optimize your sales pipeline.
+- **Notification Bot**: Instant multi-channel notifications for new leads via SMS, email, WhatsApp, and Slack.
+- **SMS Campaigns**: Automated SMS campaign management for lead nurturing and re-engagement.
+
+## Custom Solutions
+
+- AI Automation
+- App Development
+- Web Development
+- Data Management
+
+## How It Works
+
+1. **Connect Your Leads**: We integrate with your existing lead sources—forms, ads, chatbots—and start capturing every lead instantly.
+2. **AI Qualifies & Calls**: Our AI caller contacts leads within 5 seconds, qualifies them with natural conversation, and books meetings.
+3. **Deals Get Booked**: Qualified leads are booked directly into your sales team's calendar with full context and lead scoring.
+
+## Key Stats
+
+- 5,000+ leads generated
+- 2,000+ calls booked
+- Under 5-second average response time
+
+## Contact
+
+- Website: https://dobify.org
+- Free Audit: https://dobify.org/en/free-audit
+
+## Languages
+
+This website is available in English (en) and Polish (pl).
+
+## Blog
+
+Visit https://dobify.org/en/blog for insights on AI automation, marketing, and business growth strategies.
+
+## Case Studies
+
+Visit https://dobify.org/en/case-studies for real results from businesses using Dobify's AI-powered marketing automation.

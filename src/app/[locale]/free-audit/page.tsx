@@ -73,6 +73,24 @@ export default function FreeAuditPage() {
 
     return (
         <div style={{ minHeight: '100vh', paddingTop: '120px', paddingBottom: '80px', position: 'relative', overflow: 'hidden' }}>
+            {/* ContactPage Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        '@context': 'https://schema.org',
+                        '@type': 'ContactPage',
+                        name: 'Free Audit — Dobify',
+                        description: 'Request a free AI marketing audit from Dobify. We analyze your lead flow and show you how to automate it.',
+                        url: 'https://dobify.org/en/free-audit',
+                        mainEntity: {
+                            '@type': 'Organization',
+                            name: 'Dobify',
+                            url: 'https://dobify.org',
+                        },
+                    }),
+                }}
+            />
             {/* Background Elements similar to Home */}
             <div className="orb orb-1" style={{ top: '20%', left: '10%' }} />
             <div className="orb orb-2" style={{ bottom: '20%', right: '10%' }} />

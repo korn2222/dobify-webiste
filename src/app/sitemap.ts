@@ -12,21 +12,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
         entries.push(
             {
                 url: `${BASE_URL}/${locale}`,
-                lastModified: new Date(),
-                changeFrequency: 'weekly',
-                priority: 1,
+                lastModified: '2026-02-24',
             },
             {
                 url: `${BASE_URL}/${locale}/blog`,
-                lastModified: new Date(),
-                changeFrequency: 'daily',
-                priority: 0.8,
+                lastModified: '2026-02-24',
             },
             {
                 url: `${BASE_URL}/${locale}/case-studies`,
-                lastModified: new Date(),
-                changeFrequency: 'weekly',
-                priority: 0.8,
+                lastModified: '2026-02-24',
+            },
+            {
+                url: `${BASE_URL}/${locale}/free-audit`,
+                lastModified: '2026-02-24',
+            },
+            {
+                url: `${BASE_URL}/${locale}/privacy-policy`,
+                lastModified: '2026-02-24',
+            },
+            {
+                url: `${BASE_URL}/${locale}/terms-of-use`,
+                lastModified: '2026-02-24',
             },
         );
 
@@ -36,8 +42,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             entries.push({
                 url: `${BASE_URL}/${locale}/blog/${post.slug}`,
                 lastModified: new Date(post.date),
-                changeFrequency: 'monthly',
-                priority: 0.6,
             });
         }
 
@@ -46,9 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         for (const study of studies) {
             entries.push({
                 url: `${BASE_URL}/${locale}/case-studies/${study.slug}`,
-                lastModified: new Date(),
-                changeFrequency: 'monthly',
-                priority: 0.7,
+                lastModified: '2026-02-24',
             });
         }
     }

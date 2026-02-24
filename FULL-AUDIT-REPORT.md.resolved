@@ -1,0 +1,303 @@
+# Full SEO Audit Report — dobify.org
+
+**Date:** February 24, 2026  
+**Business Type:** Agency (AI Marketing & Automation)  
+**Pages Crawled:** 19  
+**Languages:** English (en), Polish (pl)
+
+---
+
+## Executive Summary
+
+### SEO Health Score: 52/100
+
+| Category | Weight | Score | Weighted |
+|----------|--------|-------|----------|
+| Technical SEO | 25% | 55/100 | 13.75 |
+| Content Quality | 25% | 40/100 | 10.00 |
+| On-Page SEO | 20% | 65/100 | 13.00 |
+| Schema / Structured Data | 10% | 35/100 | 3.50 |
+| Performance (CWV) | 10% | 70/100 | 7.00 |
+| Images | 5% | 60/100 | 3.00 |
+| AI Search Readiness | 5% | 20/100 | 1.00 |
+| **Total** | **100%** | | **51.25 ≈ 52** |
+
+### Top 5 Critical Issues
+1. **Schema JSON-LD uses wrong domain** — `dobify.com` instead of `dobify.org`
+2. **All 5 security headers missing** — no HSTS, CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy
+3. **Blog posts use hardcoded placeholder content** — not real MDX-driven content
+4. **No `llms.txt` file** — invisible to AI crawlers for GEO
+5. **`free-audit` and legal pages missing from sitemap**
+
+### Top 5 Quick Wins
+1. Fix schema domain from `.com` → `.org` (5 min fix)
+2. Add security headers in [next.config.ts](file:///Users/kornel/Storage/Dysk%204%20%28projekty%29/Antigravity/Websites/Dobify/next.config.ts) (15 min)
+3. Add `free-audit`, `privacy-policy`, `terms-of-use` pages to sitemap (10 min)
+4. Remove deprecated `changefreq` and `priority` from sitemap (5 min)
+5. Create `/llms.txt` file (15 min)
+
+---
+
+## 1. Technical SEO — 55/100
+
+| Category | Status | Score |
+|----------|--------|-------|
+| Crawlability | ✅ | 80/100 |
+| Indexability | ✅ | 75/100 |
+| Security | ❌ | 20/100 |
+| URL Structure | ✅ | 85/100 |
+| Mobile | ⚠️ | 60/100 |
+| Core Web Vitals | ✅ | 70/100 |
+| JS Rendering | ✅ | 80/100 |
+| AI Crawlers | ❌ | 10/100 |
+
+### Crawlability
+- ✅ `robots.txt` exists, valid, references sitemap
+- ✅ Properly blocks `/api/` and `/_next/`
+- ⚠️ No AI crawler management (GPTBot, ClaudeBot, PerplexityBot not explicitly allowed)
+- ✅ `X-Robots-Tag: index, follow` correctly set via [next.config.ts](file:///Users/kornel/Storage/Dysk%204%20%28projekty%29/Antigravity/Websites/Dobify/next.config.ts)
+
+### Indexability
+- ✅ Canonical tags set via Next.js `alternates.canonical`
+- ✅ No duplicate content issues detected
+- ⚠️ `free-audit`, `privacy-policy`, `terms-of-use` pages exist but are **not in the sitemap**
+- ✅ SSR working — Next.js pre-renders full HTML (`x-nextjs-cache: HIT`)
+
+### Security ❌
+
+> [!CAUTION]
+> **All 5 recommended security headers are missing.** This impacts trust signals for both search engines and users.
+
+| Header | Status |
+|--------|--------|
+| `Strict-Transport-Security` (HSTS) | ❌ Missing |
+| `Content-Security-Policy` (CSP) | ❌ Missing |
+| `X-Frame-Options` | ❌ Missing |
+| `X-Content-Type-Options` | ❌ Missing |
+| `Referrer-Policy` | ❌ Missing |
+
+**Fix:** Add all headers in the [headers()](file:///Users/kornel/Storage/Dysk%204%20%28projekty%29/Antigravity/Websites/Dobify/next.config.ts#11-24) function in [next.config.ts](file:///Users/kornel/Storage/Dysk%204%20(projekty)/Antigravity/Websites/Dobify/next.config.ts):
+
+```typescript
+{
+    key: 'Strict-Transport-Security',
+    value: 'max-age=63072000; includeSubDomains; preload'
+},
+{
+    key: 'X-Frame-Options',
+    value: 'DENY'
+},
+{
+    key: 'X-Content-Type-Options',
+    value: 'nosniff'
+},
+{
+    key: 'Referrer-Policy',
+    value: 'strict-origin-when-cross-origin'
+},
+```
+
+### URL Structure — ✅ 85/100
+- ✅ Clean, descriptive, hyphenated URLs
+- ✅ Logical hierarchy: `/{locale}/blog/{slug}`, `/{locale}/case-studies/{slug}`
+- ✅ Consistent trailing slash behavior
+- ⚠️ Root `/` redirects to `/en` — consider adding `x-default` hreflang
+
+### Mobile ⚠️
+
+````carousel
+![Mobile hero — clean layout, readable text, prominent CTA](/Users/kornel/.gemini/antigravity/brain/3a511870-d34c-4b19-90b1-03595b20c5bb/mobile_hero_view_1771954958337.png)
+<!-- slide -->
+![Mobile mid-page — feature cards stack correctly](/Users/kornel/.gemini/antigravity/brain/3a511870-d34c-4b19-90b1-03595b20c5bb/mobile_mid_page_view_1771954964072.png)
+````
+
+- ✅ Viewport meta tag present
+- ✅ Touch targets adequate (CTA buttons have generous padding)
+- ✅ Font sizes readable (base ≥16px)
+- ❌ **Horizontal overflow detected** — `.orb-1` decorative element (600px) and `.animate-marquee` (8016px) cause hidden horizontal scroll
+- **Fix:** Add `overflow-x: hidden` to the body or section containers
+
+### JS Rendering
+- ✅ Next.js SSR — content pre-rendered in initial HTML
+- ⚠️ [page.tsx](file:///Users/kornel/Storage/Dysk%204%20(projekty)/Antigravity/Websites/Dobify/src/app/[locale]/page.tsx) uses `'use client'` but Next.js still pre-renders the initial HTML server-side, so SEO is not impacted
+- ⚠️ JSON-LD schema markup is injected via client component — per Google's Dec 2025 guidance, this may face delayed processing
+
+---
+
+## 2. Content Quality — 40/100
+
+### E-E-A-T Breakdown
+
+| Factor | Score | Key Signals |
+|--------|-------|-------------|
+| Experience | 8/25 | Case studies exist but use placeholder content; no original data |
+| Expertise | 10/25 | Author listed as `Korneliusz Dobek` in metadata; no author bio page |
+| Authoritativeness | 5/25 | No external citations, empty `sameAs` in schema, no social proof links |
+| Trustworthiness | 12/25 | Privacy policy exists, HTTPS enforced, contact form available |
+
+### Content Analysis
+
+> [!WARNING]
+> Blog posts and case studies use **hardcoded placeholder content** in [page.tsx](file:///Users/kornel/Storage/Dysk%204%20%28projekty%29/Antigravity/Websites/Dobify/src/app/%5Blocale%5D/page.tsx) files instead of real MDX/CMS-driven content. This means every blog post across both languages has identical, static content regardless of slug.
+
+| Page | Word Count | Status |
+|------|-----------|--------|
+| Homepage (en) | ~450 | ⚠️ Below 500 minimum |
+| Blog listing | ~120 | ⚠️ Thin |
+| Blog post (sample) | ~200 | ❌ Below 1,500 minimum |
+| Case study (sample) | ~150 | ❌ Below 800 minimum |
+| Free audit | ~30 | ❌ Extremely thin |
+| Privacy policy | ~350 | ⚠️ Below 500 minimum |
+
+### AI Citation Readiness — 20/100
+- ❌ No quotable statistics with source citations
+- ❌ No answer-first formatting
+- ❌ No original research or unique data
+- ⚠️ Some question-based phrasing in blog titles
+- ✅ Clear heading hierarchy (H1→H2→H3)
+
+---
+
+## 3. On-Page SEO — 65/100
+
+### Title Tags
+- ✅ Homepage: `Dobify — AI Marketing & Automation Agency` (42 chars, good)
+- ✅ Blog post: `Speed to Lead: Why the First 60 Seconds Matter — Dobify` (55 chars, good)
+- ✅ Unique per page
+
+### Meta Descriptions
+- ✅ Homepage: `From lead to booked call in under 60 seconds...` (compelling, includes keyword)
+- ⚠️ Blog listing and Case Studies pages reuse the **same OG description** as the homepage instead of unique descriptions
+
+### Heading Structure
+- ✅ Single H1 per page
+- ✅ Logical H2→H3 hierarchy
+- ⚠️ Homepage H1 is inside a `<span className="gradient-text">` which is fine for rendering but the text content itself is good
+
+### Internal Linking
+- ⚠️ Footer Services section is **empty** — no links to services
+- ✅ Navigation links to Home, Blog, Case Studies
+- ⚠️ No cross-linking between blog posts
+- ⚠️ No cross-linking between case studies and blog posts
+
+### Hreflang / i18n
+- ✅ `alternates.languages` configured in [layout.tsx](file:///Users/kornel/Storage/Dysk%204%20(projekty)/Antigravity/Websites/Dobify/src/app/[locale]/layout.tsx) for [en](file:///Users/kornel/Storage/Dysk%204%20%28projekty%29/Antigravity/Websites/Dobify/src/app/%5Blocale%5D/blog/%5Bslug%5D/BlogPostClient.tsx#13-100) and `pl`
+- ✅ Browser confirms hreflang alternates are present in response headers
+- ⚠️ Blog posts only set `canonical` in alternates, **not cross-language alternates**
+- ⚠️ Case studies only set `canonical`, **not cross-language alternates**
+
+---
+
+## 4. Schema / Structured Data — 35/100
+
+### Detected Schemas
+
+| Schema | Type | Status | Issues |
+|--------|------|--------|--------|
+| Organization | JSON-LD | ❌ | Wrong domain (`dobify.com`), empty `sameAs`, no address/telephone |
+| WebSite | JSON-LD | ❌ | Wrong domain (`dobify.com`) |
+| BlogPosting | JSON-LD | ⚠️ | Missing `image`, `dateModified`; publisher missing `logo` |
+
+### Critical Issues
+
+> [!CAUTION]
+> Both Organization and WebSite schemas reference `https://dobify.com` instead of `https://dobify.org`. This creates a fundamental identity mismatch.
+
+Found in [page.tsx#L610](file:///Users/kornel/Storage/Dysk%204%20(projekty)/Antigravity/Websites/Dobify/src/app/[locale]/page.tsx#L602-L631):
+```diff
+-url: 'https://dobify.com',
+-logo: 'https://dobify.com/logo.png',
++url: 'https://dobify.org',
++logo: 'https://dobify.org/logo.png',
+```
+
+### Missing Schema Opportunities
+- ❌ No `Service` schema for offered services
+- ❌ No `Review`/`AggregateRating` schema for testimonials
+- ❌ No `BreadcrumbList` schema
+- ❌ No `Article` schema on blog posts (uses `BlogPosting` which is fine but should be completed)
+- ❌ No `ContactPage` schema on free-audit page
+- ❌ `Organization.sameAs` is empty — should list social profiles
+
+---
+
+## 5. Performance (CWV) — 70/100
+
+| Metric | Assessment | Notes |
+|--------|-----------|-------|
+| LCP | ⚠️ Potential risk | Hero section is text-based (good), but multiple external CDN calls for tech logos could delay paint |
+| INP | ✅ Likely good | Framer Motion animations are CSS-based; no heavy JS handlers |
+| CLS | ⚠️ Risk | Missing `width`/`height` on tech logo `<img>` elements; marquee animation could cause shifts |
+
+### Resource Concerns
+- ⚠️ **21 external CDN requests** for tech stack logos from `cdn.simpleicons.org` and `cdn.jsdelivr.net` — each is a separate HTTP request
+- **Recommendation:** Self-host SVG icons as a sprite or inline SVGs instead
+
+---
+
+## 6. Images — 60/100
+
+### Image Audit Summary
+
+| Metric | Status | Count |
+|--------|--------|-------|
+| Total local images | - | 2 ([logo.png](file:///Users/kornel/Storage/Dysk%204%20%28projekty%29/Antigravity/Websites/Dobify/public/logo.png), [icon.png](file:///Users/kornel/Storage/Dysk%204%20%28projekty%29/Antigravity/Websites/Dobify/src/app/icon.png)) |
+| External images | ⚠️ | 21 (tech stack logos via CDN) |
+| Missing alt text | ✅ | 0 |
+| Missing dimensions | ❌ | 21 (tech logos have no `width`/`height` HTML attributes) |
+| Not using Next/Image | ⚠️ | 21 (use raw `<img>` elements instead of `next/image`) |
+
+### Issues
+- ⚠️ Tech logos use raw `<img>` instead of Next.js `<Image>` component (bypasses optimization)
+- ⚠️ [logo.png](file:///Users/kornel/Storage/Dysk%204%20%28projekty%29/Antigravity/Websites/Dobify/public/logo.png) is 62KB PNG — could be optimized as WebP/AVIF
+- ✅ [next.config.ts](file:///Users/kornel/Storage/Dysk%204%20%28projekty%29/Antigravity/Websites/Dobify/next.config.ts) has `image.formats: ['image/avif', 'image/webp']` configured
+- ✅ OG image is dynamically generated
+
+---
+
+## 7. AI Search Readiness (GEO) — 20/100
+
+| Check | Status |
+|-------|--------|
+| `llms.txt` file | ❌ Missing (404) |
+| AI crawler access | ⚠️ Implicitly allowed via `*` but not explicitly managed |
+| SSR for AI crawlers | ✅ Content available in initial HTML |
+| Brand mentions (external) | ❌ Unknown / none detected |
+| Passage-level citability | ❌ No 134-167 word self-contained answer blocks |
+| Author credentials | ❌ No author bio pages |
+| Entity clarity | ❌ Organization schema is incomplete |
+
+### Recommendations
+1. Create `/llms.txt` with structured content guide
+2. Add explicit AI crawler rules in `robots.txt`
+3. Build out author profile pages
+4. Create self-contained answer blocks in blog content
+5. Build brand presence on LinkedIn, YouTube, Reddit
+
+---
+
+## 8. Sitemap Analysis
+
+### Current Sitemap: 16 URLs
+
+| Issue | Severity |
+|-------|----------|
+| Uses deprecated `<changefreq>` and `<priority>` tags | Info (ignored by Google) |
+| `free-audit` page not included | High |
+| `privacy-policy` page not included | Medium |
+| `terms-of-use` page not included | Medium |
+| `lastModified` on static pages uses `new Date()` (always current) | Low |
+
+### Missing Pages
+The sitemap at [sitemap.ts](file:///Users/kornel/Storage/Dysk%204%20(projekty)/Antigravity/Websites/Dobify/src/app/sitemap.ts) should include:
+- `/{locale}/free-audit`
+- `/{locale}/privacy-policy`
+- `/{locale}/terms-of-use`
+
+---
+
+## Browser Recordings
+
+![Desktop homepage audit recording](/Users/kornel/.gemini/antigravity/brain/3a511870-d34c-4b19-90b1-03595b20c5bb/desktop_homepage_check_1771953682709.webp)
+
+![Mobile responsiveness audit recording](/Users/kornel/.gemini/antigravity/brain/3a511870-d34c-4b19-90b1-03595b20c5bb/mobile_homepage_check_1771954940304.webp)
