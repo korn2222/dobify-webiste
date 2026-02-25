@@ -21,77 +21,77 @@
         "title": "BUILD WITH YOUR FAVORITE TECH"
     },
     "features": {
-        "title": "Everything You Need to Dominate Your Market",
-        "subtitle": "Six powerful tools, one seamless platform.",
+        "title": "The tools you need to scale",
+        "subtitle": "Six tools built into one platform.",
         "leadGen": {
             "title": "Lead Generation",
             "subtitle": "Paid Ads",
-            "description": "High-converting ad campaigns on Meta, Google & TikTok that flood your pipeline with qualified prospects every single day."
+            "description": "Targeted ad campaigns on Meta, Google & TikTok that bring qualified prospects to your pipeline."
         },
         "aiCaller": {
             "title": "AI Caller",
             "subtitle": "Speed to Lead",
-            "description": "Our AI voice agent contacts every new lead within seconds—qualifying, booking, and following up 24/7 without missing a beat."
+            "description": "Our AI voice agent contacts every new lead within seconds. It qualifies them, books meetings, and handles follow-ups 24/7."
         },
         "dataAnalysis": {
             "title": "Data Analysis",
             "subtitle": "Automated Dashboards",
-            "description": "Real-time Excel & BI dashboards that turn your raw data into actionable insights. No manual reports, no guesswork."
+            "description": "Live Excel & BI dashboards that show exactly what's happening. No manual reports, no guessing."
         },
         "crm": {
             "title": "CRM",
             "subtitle": "Client Database",
-            "description": "Manage your entire client journey in one place—from first touch to closed deal, with automated follow-ups and pipeline tracking."
+            "description": "Manage the client journey in one place. Track exactly where deals are, from first touch to closed won."
         },
         "notificationBot": {
             "title": "Real-Time Notification Bot",
             "subtitle": "Instant Alerts",
-            "description": "Get instant Slack, WhatsApp & email alerts the moment a lead converts, a deal closes, or a task needs attention."
+            "description": "Get Slack, WhatsApp, and email alerts the second a lead converts or a deal closes."
         },
         "smsCampaigns": {
             "title": "SMS & Email Campaigns",
             "subtitle": "Automated Outreach",
-            "description": "Automated drip sequences via SMS and email that nurture leads, recover abandoned prospects, and drive repeat engagement at scale."
+            "description": "Automated SMS and email sequences to follow up with leads and recover abandoned prospects."
         }
     },
     "howItWorks": {
         "title": "How It Works",
-        "subtitle": "Three steps. Zero friction.",
+        "subtitle": "Three steps. No waiting.",
         "step1": {
             "title": "Capture",
-            "description": "We launch targeted ad campaigns that drive high-intent leads straight into your pipeline."
+            "description": "We run ad campaigns that bring high-intent leads into your pipeline."
         },
         "step2": {
             "title": "Qualify",
-            "description": "Our AI instantly assesses each lead, scoring them and filtering out the noise in real time."
+            "description": "Our AI asks the right questions and scores each lead, filtering out the noise."
         },
         "step3": {
             "title": "Book",
-            "description": "Qualified leads get an AI-powered call within seconds—booking directly into your calendar."
+            "description": "Qualified leads get a call in seconds. Meetings go straight to your calendar."
         }
     },
     "customSolutions": {
         "title": "Custom Solutions",
-        "subtitle": "Tailored strategies for your unique business needs.",
+        "subtitle": "Custom setups built for how you actually work.",
         "aiAutomation": {
             "title": "AI Automation",
-            "description": "Streamline your operations with intelligent workflows. We build custom AI agents that handle repetitive tasks, from customer support to data processing."
+            "description": "We build custom AI agents for repetitive work, so your team doesn't have to do it. Think customer support and data entry."
         },
         "appDevelopment": {
             "title": "App Development",
-            "description": "Transform your ideas into powerful mobile experiences. We design and develop native and cross-platform apps that are intuitive and scalable."
+            "description": "We design and build native mobile apps using modern frameworks."
         },
         "webDevelopment": {
             "title": "Web Development",
-            "description": "Create a stunning digital presence. Our custom web solutions combine cutting-edge technologies with premium design to deliver fast, responsive websites."
+            "description": "We design and build fast, responsive websites."
         },
         "dataManagement": {
             "title": "Data Management",
-            "description": "Unlock the power of your data. We implement robust data architecture and analytics pipelines, ensuring your information is secure and accessible."
+            "description": "We set up data architecture and analytics pipelines so your team can actually understand their numbers."
         }
     },
     "testimonials": {
-        "title": "Trusted by Growth-Obsessed Teams",
+        "title": "Trusted by teams that care about growth",
         "subtitle": "See what our clients have to say.",
         "reviews": [
             {
@@ -118,9 +118,9 @@
         "viewAll": "View all posts"
     },
     "cta": {
-        "title": "Ready to Automate Your Growth?",
-        "subtitle": "Get a free audit of your current lead flow and see exactly where you're losing deals.",
-        "button": "Book Your Free Audit"
+        "title": "Ready to move faster?",
+        "subtitle": "Get a free audit of your lead flow and see where you're losing deals.",
+        "button": "Book a Free Audit"
     },
     "footer": {
         "description": "Dobify — an AI agency specializing in AI automations for marketing. We help businesses capture, qualify, and convert leads faster than ever.",

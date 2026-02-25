@@ -21,77 +21,77 @@
         "title": "ZBUDOWANE Z NAJLEPSZĄ TECHNOLOGIĄ"
     },
     "features": {
-        "title": "Wszystko, czego potrzebujesz, by zdominować swój rynek",
-        "subtitle": "Sześć potężnych narzędzi, jedna platforma.",
+        "title": "Narzędzia, których potrzebujesz do skalowania.",
+        "subtitle": "Sześć narzędzi w jednej platformie.",
         "leadGen": {
             "title": "Generowanie leadów",
             "subtitle": "Reklamy płatne",
-            "description": "Wysoko konwertujące kampanie reklamowe na Meta, Google i TikTok, które codziennie zasilają Twój pipeline wykwalifikowanymi prospektami."
+            "description": "Kampanie na Meta, Google i TikTok, które uczciwie dostarczają wykwalifikowanych prospektów."
         },
         "aiCaller": {
             "title": "AI Caller",
             "subtitle": "Szybkość do leada",
-            "description": "Nasz agent głosowy AI kontaktuje każdego nowego leada w ciągu sekund — kwalifikuje, ustawia spotkania i śledzi 24/7 bez przerwy."
+            "description": "Agent głosowy dzwoni do nowych leadów w kilka sekund. Sam kwalifikuje rozmówców i umawia spotkania 24/7."
         },
         "dataAnalysis": {
             "title": "Analiza danych",
             "subtitle": "Automatyczne dashboardy",
-            "description": "Dashboardy w czasie rzeczywistym, które zamieniają surowe dane w praktyczne wnioski. Żadnych ręcznych raportów, żadnego zgadywania."
+            "description": "Dashboardy na żywo dodające kontekst do danych. Koniec z ręcznymi raportami i zgadywaniem."
         },
         "crm": {
             "title": "CRM",
             "subtitle": "Baza klientów",
-            "description": "Zarządzaj całą ścieżką klienta w jednym miejscu — od pierwszego kontaktu do zamkniętej transakcji, z automatycznym follow-upem."
+            "description": "Zarządzaj całą ścieżką w jednym miejscu. Śledź, na jakim etapie są Twoi klienci od pierwszego kontaktu po zamkniętą transakcję."
         },
         "notificationBot": {
             "title": "Bot powiadomień w czasie rzeczywistym",
             "subtitle": "Natychmiastowe alerty",
-            "description": "Natychmiastowe powiadomienia przez Slack, WhatsApp i email w momencie konwersji leada, zamknięcia transakcji lub wymaganej akcji."
+            "description": "Otrzymuj alerty na Slacku, WhatsAppie i emailu w sekundę po konwersji leada lub zamknięciu transakcji."
         },
         "smsCampaigns": {
             "title": "Kampanie SMS & Email",
             "subtitle": "Automatyczny outreach",
-            "description": "Automatyczne sekwencje drip przez SMS i email, które pielęgnują leady, odzyskują porzuconych prospektów i napędzają ponowne zaangażowanie na skalę."
+            "description": "Zautomatyzowane wiadomości SMS i email do odzyskiwania leadów i podtrzymywania kontaktu."
         }
     },
     "howItWorks": {
         "title": "Jak to działa",
-        "subtitle": "Trzy kroki. Zero tarcia.",
+        "subtitle": "Trzy kroki. Zero czekania.",
         "step1": {
             "title": "Przechwycenie",
-            "description": "Uruchamiamy targetowane kampanie reklamowe, które kierują leady o wysokim intencji prosto do Twojego pipeline."
+            "description": "Uruchamiamy kampanie, które kierują zdecydowanych klientów do Twojego lejka."
         },
         "step2": {
             "title": "Kwalifikacja",
-            "description": "Nasz AI natychmiast ocenia każdego leada, przyznając punkty i odfiltrowując szum w czasie rzeczywistym."
+            "description": "Nasze AI zadaje odpowiednie pytania, ocenia leady i odfiltrowuje szum."
         },
         "step3": {
             "title": "Rezerwacja",
-            "description": "Zakwalifikowani leadzi otrzymują telefon od AI w ciągu sekund — rezerwacja bezpośrednio w Twoim kalendarzu."
+            "description": "Zakwalifikowani klienci odbierają telefon po kilku sekundach. Spotkania lądują prosto w Twoim kalendarzu."
         }
     },
     "customSolutions": {
         "title": "Rozwiązania Niestandardowe",
-        "subtitle": "Strategie dopasowane do Twoich unikalnych potrzeb biznesowych.",
+        "subtitle": "Dedykowane wdrożenia zbudowane pod to, jak pracujesz.",
         "aiAutomation": {
             "title": "Automatyzacja AI",
-            "description": "Usprawnij swoje operacje dzięki inteligentnym przepływom pracy. Budujemy niestandardowych agentów AI, którzy obsługują powtarzalne zadania, od obsługi klienta po przetwarzanie danych."
+            "description": "Tworzymy agentów AI do nużących zadań, żeby Twój zespół nie musiał ich robić. Od obsługi klienta po wprowadzanie danych."
         },
         "appDevelopment": {
             "title": "Tworzenie Aplikacji",
-            "description": "Przekształć swoje pomysły w potężne doświadczenia mobilne. Projektujemy i tworzymy natywne i międzyplatformowe aplikacje, które są intuicyjne i skalowalne."
+            "description": "Projektujemy i programujemy aplikacje mobilne w oparciu o nowoczesne frameworki."
         },
         "webDevelopment": {
             "title": "Tworzenie Stron WWW",
-            "description": "Stwórz oszałamiającą obecność cyfrową. Nasze niestandardowe rozwiązania webowe łączą najnowocześniejsze technologie z designem premium, aby dostarczać szybkie, responsywne strony."
+            "description": "Tworzymy szybkie i responsywne strony internetowe."
         },
         "dataManagement": {
             "title": "Zarządzanie Danymi",
-            "description": "Odblokuj moc swoich danych. Wdrażamy solidną architekturę danych i potoki analityczne, zapewniając bezpieczeństwo i dostępność Twoich informacji."
+            "description": "Budujemy architekturę i analitykę danych, dzięki której Twój zespół w końcu zrozumie własne liczby."
         }
     },
     "testimonials": {
-        "title": "Zaufali nam zespoły nastawione na wzrost",
+        "title": "Zaufali nam ci, którym zależy na wzroście",
         "subtitle": "Zobacz, co mówią nasi klienci.",
         "reviews": [
             {
@@ -118,9 +118,9 @@
         "viewAll": "Zobacz wszystkie wpisy"
     },
     "cta": {
-        "title": "Gotowy na automatyzację wzrostu?",
-        "subtitle": "Otrzymaj bezpłatny audyt obecnego flow leadów i zobacz, gdzie dokładnie tracisz transakcje.",
-        "button": "Bezpłatny audyt"
+        "title": "Gotowy na szybsze działanie?",
+        "subtitle": "Odbierz darmowy audyt przepływu leadów i zobacz, gdzie uciekają Twoi klienci.",
+        "button": "Zamów audyt"
     },
     "footer": {
         "description": "Dobify — agencja AI specjalizująca się w automatyzacji marketingu. Automatyzacje AI, które pomagają firmom szybciej przechwytywać, kwalifikować i konwertować leady.",
