@@ -27,8 +27,8 @@ export async function generateMetadata({
         const messages = (await import(`../../../messages/${locale}.json`)).default;
 
         const keywords = locale === 'pl'
-            ? ['agencja AI', 'automatyzacje AI', 'automatyzacja marketingu', 'generowanie leadów', 'AI marketing', 'Dobify']
-            : ['AI Marketing', 'Automation Agency', 'Lead Generation', 'Marketing Automation', 'AI Agency', 'Dobify'];
+            ? ['agencja AI', 'automatyzacje AI', 'automatyzacja marketingu', 'automatyzacja procesów AI', 'generowanie leadów', 'usługi AI', 'AI marketing', 'Dobify']
+            : ['AI Agency', 'AI Automations', 'AI Automation Agency', 'AI Marketing', 'Lead Generation', 'Marketing Automation', 'AI-Powered Automation', 'Dobify'];
 
         return {
             metadataBase: new URL(url),

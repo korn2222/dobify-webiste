@@ -7,7 +7,8 @@
     },
     "hero": {
         "headline": "From Lead to Booked Call in Under 60 Seconds",
-        "subheadline": "AI automation systems that capture, qualify, and contact your leads instantly—while your competitors are still checking email.",
+        "subheadline": "Dobify is an AI agency delivering AI automations that capture, qualify, and contact your leads instantly—while your competitors are still checking email.",
+        "badge": "AI-Powered Automation",
         "cta": "Book Your Free Audit"
     },
     "socialProof": {
@@ -15,6 +16,9 @@
         "calls": "Calls Booked",
         "clients": "Happy Clients",
         "responseTime": "Avg. Response Time"
+    },
+    "techStack": {
+        "title": "BUILD WITH YOUR FAVORITE TECH"
     },
     "features": {
         "title": "Everything You Need to Dominate Your Market",
@@ -119,7 +123,7 @@
         "button": "Book Your Free Audit"
     },
     "footer": {
-        "description": "AI-powered marketing and automation systems that help businesses capture, qualify, and convert leads faster than ever.",
+        "description": "Dobify — an AI agency specializing in AI automations for marketing. We help businesses capture, qualify, and convert leads faster than ever.",
         "quickLinks": "Quick Links",
         "services": "Services",
         "legal": "Legal",
@@ -129,7 +133,7 @@
     },
     "blog": {
         "title": "Blog",
-        "subtitle": "Insights, guides, and strategies on AI automation and marketing.",
+        "subtitle": "Expert insights on AI automations, marketing automation, and growth strategies from an AI agency.",
         "readMore": "Read article",
         "backToBlog": "← Back to Blog"
     },
@@ -144,12 +148,12 @@
         "solution": "Our Solution"
     },
     "metadata": {
-        "title": "Dobify — AI Marketing & Automation Agency",
-        "description": "From lead to booked call in under 60 seconds. AI automation systems that capture, qualify, and contact your leads instantly.",
-        "blogTitle": "Blog — Dobify",
-        "blogDescription": "Insights on AI automation, marketing, and business growth strategies.",
-        "caseStudiesTitle": "Case Studies — Dobify",
-        "caseStudiesDescription": "Real results from businesses using Dobify's AI-powered marketing automation."
+        "title": "Dobify — AI Agency | AI Automations for Marketing & Lead Gen",
+        "description": "Dobify is an AI agency specializing in AI automations that capture, qualify, and book your leads in under 60 seconds. Get a free audit today.",
+        "blogTitle": "AI Automation Blog — Dobify | AI Agency",
+        "blogDescription": "Expert insights on AI automations, lead generation, and marketing strategies from Dobify — your AI agency partner.",
+        "caseStudiesTitle": "Case Studies — Dobify | AI Agency Results",
+        "caseStudiesDescription": "Real results from businesses using Dobify's AI automations. See how our AI agency delivers measurable growth."
     },
     "notFound": {
         "title": "Page Not Found",

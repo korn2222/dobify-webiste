@@ -32,7 +32,7 @@ function Hero() {
                 >
                     <span className="glass" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 1.25rem', borderRadius: '100px', fontSize: '0.85rem', color: 'rgba(255,255,255,0.7)' }}>
                         <span style={{ width: 8, height: 8, borderRadius: '50%', background: '#4ad888', display: 'inline-block', animation: 'pulse-glow 2s ease-in-out infinite' }} />
-                        AI-Powered Automation
+                        {t('badge')}
                     </span>
                 </motion.div>
 
@@ -148,9 +148,8 @@ function SocialProof() {
    TECH STACK CAROUSEL
    ============================================================ */
 function TechStack() {
+    const t = useTranslations('techStack');
     const [failedLogos, setFailedLogos] = useState<Set<string>>(new Set());
-
-
 
     const handleImageError = (name: string) => {
         setFailedLogos(prev => {
@@ -190,7 +189,7 @@ function TechStack() {
         <section className="section" style={{ padding: '60px 0', overflow: 'hidden' }}>
             <div className="container">
                 <p style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '0.85rem', fontWeight: 600, letterSpacing: '0.05em', color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase' }}>
-                    BUILD WITH YOUR FAVORITE TECH
+                    {t('title')}
                 </p>
                 {/* Added py-4 (padding) to mask container to allow zoom scaling without clipping top/bottom */}
                 <div style={{ position: 'relative', overflow: 'visible', padding: '20px 0', maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' }}>

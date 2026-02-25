@@ -8,6 +8,7 @@
     "hero": {
         "headline": "Od leada do umówionej rozmowy w mniej niż 60 sekund",
         "subheadline": "Dobify to agencja AI oferująca automatyzacje AI, które przechwytują, kwalifikują i natychmiast kontaktują się z Twoimi leadami — podczas gdy konkurencja wciąż sprawdza maila.",
+        "badge": "Automatyzacje AI",
         "cta": "Bezpłatny audyt"
     },
     "socialProof": {
@@ -15,6 +16,9 @@
         "calls": "Umówionych rozmów",
         "clients": "Zadowolonych klientów",
         "responseTime": "Śr. czas odpowiedzi"
+    },
+    "techStack": {
+        "title": "ZBUDOWANE Z NAJLEPSZĄ TECHNOLOGIĄ"
     },
     "features": {
         "title": "Wszystko, czego potrzebujesz, by zdominować swój rynek",
@@ -144,11 +148,11 @@
         "solution": "Nasze rozwiązanie"
     },
     "metadata": {
-        "title": "Dobify — Agencja AI | Automatyzacje AI i Marketing",
+        "title": "Dobify — Agencja AI | Automatyzacje AI dla Marketingu",
         "description": "Agencja AI specjalizująca się w automatyzacji marketingu. Automatyzacje AI, które przechwytują leady, kwalifikują i umawiają rozmowy w mniej niż 60 sekund.",
         "blogTitle": "Blog o automatyzacji AI — Dobify | Agencja AI",
         "blogDescription": "Artykuły o automatyzacji AI, generowaniu leadów i strategiach marketingowych. Praktyczna wiedza od agencji AI Dobify.",
-        "caseStudiesTitle": "Case Studies — Dobify | Automatyzacje AI w praktyce",
+        "caseStudiesTitle": "Case Studies — Agencja AI Dobify | Automatyzacje AI w praktyce",
         "caseStudiesDescription": "Realne wyniki automatyzacji AI w firmach. Zobacz, jak agencja AI Dobify pomaga klientom zwiększać przychody."
     },
     "notFound": {
