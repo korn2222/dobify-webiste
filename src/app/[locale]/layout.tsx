@@ -26,9 +26,13 @@ export async function generateMetadata({
     try {
         const messages = (await import(`../../../messages/${locale}.json`)).default;
 
+        const keywords = locale === 'pl'
+            ? ['agencja AI', 'automatyzacje AI', 'automatyzacja marketingu', 'generowanie leadów', 'AI marketing', 'Dobify']
+            : ['AI Marketing', 'Automation Agency', 'Lead Generation', 'Marketing Automation', 'AI Agency', 'Dobify'];
+
         return {
             metadataBase: new URL(url),
-            keywords: ['AI Marketing', 'Automation Agency', 'Lead Generation', 'Marketing Automation', 'Dobify'],
+            keywords,
             authors: [{ name: 'Korneliusz Dobek' }, { name: 'Dobify', url: 'https://dobify.org' }],
             creator: 'Korneliusz Dobek',
             publisher: 'Dobify',
